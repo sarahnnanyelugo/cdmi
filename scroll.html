@@ -1,0 +1,42 @@
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Changing Background Color on Scroll</title>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+ 
+<article id="one" data-color="#11cf72"><h1>First</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consequat pretium odio ac vulputate.
+ Nullam vitae diam id erat interdum dignissim. Nam eget faucibus metus. Pellentesque vitae nibh non mi ultrices rhoncus. Aliquam vestibulum ut massa vitae congue. 
+ Aliquam mauris neque, eleifend sit amet elit ut, placerat iaculis velit. Suspendisse potenti. Cras interdum interdum porttitor. Aenean ac enim vitae metus fringilla malesuada. 
+ Duis pharetra enim nulla, non eleifend ante lobortis ac. Duis quis purus lorem. Sed mattis massa ac nisl faucibus sagittis. Ut posuere velit massa, et malesuada elit condimentum ut. 
+ Integer lacinia risus ut ante cursus, sed porttitor nisl suscipit. Aliquam non ultricies massa. Donec vehicula sem at nisl lacinia ultrices.</p> <div class="clear"></div></article>
+
+<article id="two" data-color="#1da1f2"><h1>Second</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consequat pretium odio ac vulputate.
+ Nullam vitae diam id erat interdum dignissim. Nam eget faucibus metus. Pellentesque vitae nibh non mi ultrices rhoncus. Aliquam vestibulum ut massa vitae congue.
+ Aliquam mauris neque, eleifend sit amet elit ut, placerat iaculis velit. Suspendisse potenti. Cras interdum interdum porttitor. Aenean ac enim vitae metus fringilla malesuada. 
+ Duis pharetra enim nulla, non eleifend ante lobortis ac. Duis quis purus lorem. Sed mattis massa ac nisl faucibus sagittis. Ut posuere velit massa, et malesuada elit condimentum ut.
+ Integer lacinia risus ut ante cursus, sed porttitor nisl suscipit. Aliquam non ultricies massa. Donec vehicula sem at nisl lacinia ultrices.</p> <div class="clear"></div> </article>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script  src="function.js"></script>
+ <script>
+     var one = "#11cf72",
+		two = "#1da1f2";
+
+
+$(window).on("scroll touchmove", function() {
+		if ($(document).scrollTop() >= $("#one").position().top) {
+				$('body').css('background', $("#one").attr("data-color"));
+
+		};
+		if ($(document).scrollTop() > $("#two").position().top) {
+				$('body').css('background', $("#two").attr("data-color"))
+		};
+
+});
+ </script>
+</body>
+</html>
