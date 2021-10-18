@@ -542,8 +542,9 @@ opacity:0.4;
 
 
 #welcomeAdd{
-  margin-left:110px;
+  padding-left:110px;
   margin-top:200px;
+
 
 }
 #welcomeAdd p{
@@ -567,6 +568,7 @@ margin-left:-20px;
   margin-top:-480px;
   /* margin-right:-14px !important; */
   padding-right:0px !important;
+  margin-bottom:80px !important;
 }
 
 .inline-photo.is-visible {
@@ -590,7 +592,6 @@ margin-left:-20px;
   width: 90%;
   will-change: transform, opacity;
 }
-
 
 
 
@@ -816,17 +817,75 @@ margin-left:-20px;
 }
 
 
+.affiliations{
+  /* margin-top:140px; */
+  padding-left:40px;
+  opacity:1;
+  margin-top:30px;
+
+  /* background-color:grey; */
+
+
+}
+.affiliate{
+  background-color:rgb(233, 227, 227);
+  /* opacity:0.5; */
+}
 
 
 
+footer p{
+  padding-top:10px;
+  padding-left:20px;
+  color:white;
+}
 
+footer a{
+  text-decoration: underline !important;
+  color:#ffffff !important
+}
 
+.L-links,.L-links:hover{
+  margin:10px;
+  font-size:12px;
+  font-weight:bold;
+  color:white;
+  text-decoration:underline;
+}
 
+#Linput{
+  padding:22px;
+  font-size:12px;
+  /* width:-50px !important; */
+  /* margin-left:10px; */
+}
 
+#Lbutton{
+  padding-bottom:7px;
+  border-top-right-radius:5px;
+  border-bottom-right-radius:5px;
+  font-size:10px;
+  background-color:blue;
+  color:white;
+  font-weight:bolder;
+}
+#Lspan{
+  float:right;
+  font-size:10px;
+  margin-top:-30px;
+  margin-right:-100px;
 
+  /* display:inline; */
+  /* margin-left:1100px; */
+}
+#Lspan a{
+  text-decoration:none !important;
+}
 
-
-
+.handles{
+  height:30px;
+  /* padding-left:50px; */
+}
 
 
 
