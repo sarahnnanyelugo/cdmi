@@ -438,6 +438,7 @@ font-size:11px;
 
 }
 
+
 .open-button {
   background-color: #555;
   color: white;
@@ -509,14 +510,21 @@ font-size:11px;
 .Search-container{
   width:100%;
   min-height:500px;
-  top:0;
+  /* top:120px; */
   background-color:rgb(1, 1, 29);
   z-index:1000;
-  opacity:0.4;
-  position:relative;
+  position:fixed;
+  opacity:0;
   display:none;
+  left: 0;
+  margin-left:25%;
   /* visibility:hidden; */
 
+}
+.Search-container:hover{
+display:none;
+opacity:0.4;
+/* float:right !important; */
 }
 .Search-container input[type=text] {
  /* padding-top:60px !important; */
@@ -524,7 +532,13 @@ font-size:11px;
  border:none;
  font-size:35px;
 }
+.icofont-brand-nexus{
+  font-size:30px;
+  color:white;
+  float:right;
+  padding-top:20px;
 
+}
 
 
 .l_c_h {

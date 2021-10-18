@@ -196,10 +196,35 @@
             </div>
             <a class="dropdown2 dropbtn2" href="#portal"><img src="Assets/img/portal.svg" alt="icon" height=18px>PORTAL</a>
 
-
-            <a href="#" class="dropdown2 dropbtn2" style="font-size:16px; font-weight:bolder !important"><i class="icofont-search-1"></i></a>
+<div class="dropdown2">
+            <button class= "dropbtn2" style="font-size:16px; font-weight:bolder !important"><i class="icofont-search-1"></i></button>
+            <div class='row Search-container' style="top:120px;">
+                <div class="col-md-12 ">
+                    <i class="icofont-brand-nexus"></i>
+                <div class="row">
+                    <div class="col-md-12">
+                <div class='col-md-12'>&nbsp;</div>
+                </div>
+                </div>
+                
+                
+                <div class="row col-md-12">
+                    <div class="col-md-4">&nbsp;</div>
+                    <div  class="col-md-4">
+                        <input type="text" placeholder="Search Here..." class="col-md-12">
+                    </div>
+                
+                    <div class="col-md-4">&nbsp;</div>
+                    </div>
+                
+                    <div class="row col-md-12">
+                        <div class="col-md-12">&nbsp;</div>
+                        </div>
+                
+                </div>
+                </div>
         </div>
-
+</div>
 
 
 
@@ -244,23 +269,27 @@
         </a>
     </div>
 </div>
+<!---learning is just the beginning-->
 <div class="row" >
-    <div class="col-md-12 learning slide-left testimonial" style="display:flex" class="animation-element slide-left testimonial">
-            <div class="col-md-4 text-center" style="padding-left:100px">
-            <img src="Assets/img/Line6.svg" width="70% !important">
+
+    <div class="col-md-12 learning slide-left testimonial" style="display:flex; margin-top:100px !important; padding-top:120px !important" class="animation-element slide-left testimonial">
+            <div class="col-md-4 text-center" style="padding-left:100px;">
+            <img src="Assets/img/Line6.svg" width="70% !important" style="margin-bottom:-100px; z-index:2 !important; position:relative">
             </div>
 
             <div class="col-md-4 text-center">
-                <img src="Assets/img/opaque-logo.png" style="margin-top:-45px" height=230px>
-                <h2 style="font-family:Avenir-Book; margin-top:-200px;"><em>Learning<br> Is Just the Beginning</em></h2>
+                <img src="Assets/img/logo2.png" style="margin-top:-85px !important; position:relative; z-index:1; opacity:0.2" height=230px>
+                <h2 style="font-family:Avenir-Book; margin-top:-200px; margin-bottom:-120px; z-index:2 !important; position:relative" ><em>Learning<br> Is Just the Beginning</em></h2>
+                <img src="Assets/img/book5.jpeg" alt="book-image" width=400px height=250px>
+
             </div>
-            <div class="col-md-4 text-center" style="padding-right:100px">
-                <img src="Assets/img/Line6.svg" width="70% !important">
+            <div class="col-md-4 text-center" style="padding-right:100px; margin-bottom:-120px; z-index:2 !important; position:relative">
+                <img src="Assets/img/Line6.svg" width="70% !important" style="margin-bottom:-100px; z-index:2 !important; position:relative">
                 </div>
     </div>
 </div>
 
-
+<!--div for mission-->
 <div class="row">
     <div id="mission" class="col-md-12" style="display:flex; padding-left:0px">
         <div class="col-md-6" style="padding-left:0px" >
@@ -284,33 +313,14 @@
     </div>
 </div>
 
-
-<div class='row'>
-<div class="col-md-12 Search-container">
-
-<div class="row">
-    <div class="col-md-12">
-<div class='col-md-12'>&nbsp;</div>
-</div>
-</div>
+<!--div for dropdown search bar-->
 
 
-<div class="row col-md-12">
-    <div class="col-md-4">&nbsp;</div>
-    <div  class="col-md-4">
-        <input type="text" placeholder="Search Here..." class="col-md-12">
-    </div>
 
-    <div class="col-md-4">&nbsp;</div>
-    </div>
 
-    <div class="row col-md-12">
-        <div class="col-md-12">&nbsp;</div>
-        </div>
 
-</div>
-</div>
 
+<!--div for live chat-->
 <div class="l_c_h">
 	<div class="c_h">
     	<div class="left_c">
@@ -328,7 +338,7 @@
     </div>
     <div class="chat_container" style="display: none;">
     <p class="no_provider">
-         
+
        Welcome to CDMI
             </p>
     
@@ -371,7 +381,7 @@
 
 
 
-
+<!--script for navbar-->
 <script type = "text/javascript" >
     window.addEventListener('DOMContentLoaded', (event) => {
         jQuery('div#navbar.navbar').css("background-color", "rgba(255, 255, 255, 0)");
@@ -419,6 +429,8 @@
         </script> -->
 
 
+
+<!--script for chat-box-->
         <script>
             $(function(){
    $(".c_h").click(function(e) {
@@ -433,6 +445,9 @@
 });
         </script>
 
+
+
+<!--script for learning-->
 <script>
     var $animation_elements = $('.learning');
 var $window = $(window);
