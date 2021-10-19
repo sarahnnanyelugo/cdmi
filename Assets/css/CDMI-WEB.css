@@ -3,7 +3,8 @@
 
 } */
 .activenav{
-color:blue !important;
+/* color:blue !important; */
+color:tomato !important;
 font-size:16px !important;
     /* background-color:rgb(240, 240, 240) !important;
     color:blue !important;
@@ -262,6 +263,7 @@ font-size:16px !important;
   .column2 a:hover {
     color: rgb(45, 105, 201)!important;
     text-decoration:none;
+    background-color:black;
     /* font-weight:bold !important; */
   }
 
@@ -593,13 +595,82 @@ margin-left:-20px;
   will-change: transform, opacity;
 }
 
+.grid{
+  height:40px;
+  background-color:black;
+  opacity:0.5;
+  text-align:center;
+  font-size:15px;
+  margin-top:-40px;
+  z-index:2;
+  transition: .5s ease;
+  color:white;
+  position:relative;
+  overflow:hidden;
+
+
+}
+.grid h4{
+padding-top:5px;
+}
+
+.grid:hover{
+  opacity:0.8;
+  height:227px;
+  margin-top:-227px;
+  padding-top:30px;
+  background-color:rgb(43, 43, 82);
+
+}
+.grid2{
+  height:40px;
+  width:410px;
+  background-color:black;
+  opacity:0.5;
+  text-align:center;
+  font-size:16px;
+  margin-top:-40px;
+  z-index:2;
+  transition: .5s ease;
+  color:white;
+  position:relative;
+  overflow:hidden;
+
+}
+.grid2:hover{
+  opacity:0.8;
+  height:270px;
+  width:410px;
+  margin-top:-270px;
+  padding-top:30px;
+  background-color:rgb(43, 43, 82);
+}
+.grid h4{
+padding-top:5px;
+}
+
+#center-text p{
+  margin-right:400px;
+}
+#grid{
+  background-color:rgb(226, 224, 224);
+  margin-top:80px;
+  padding-top:50px;
+}
+
+.btn-trans:hover{
+background-color:transparent !important;
+color:white !important;
+border:1px solid white !important;
+}
 
 #events{
   margin-top:90px;
   padding-top:50px;
-  height:500px;
-  /* background-image:url("../img/background.jpeg"); */
- background-color:#0b0119;
+
+  min-height:500px;
+  /* background-image:url("../img/dark-blue-line.jpg"); */
+  background-color:#0b0119;
  /* background:transparent; */
  color:white;
 
@@ -619,6 +690,32 @@ margin-left:-20px;
   transform:scale(1, 1);
 }
 }
+#monials{
+  margin-top:40px;
+  /* padding-top:30px; */
+  padding-left:50px;
+  height:500px;
+  /* width:100%; */
+  /* background-image:url("../img/frequently.png"); */
+  background-image:url("../img/A-facilities.png");
+
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+
+
+
+}
+.testi{
+  display:flex;
+  color:whitesmoke;
+  font-weight:bolder;
+  letter-spacing:0.2rem;
+  font-size:18px !important;
+  /* text-shadow:2px 2px #0000; */
+
+}
+
+
 
 .l_c_h {
   width:300px;
@@ -845,16 +942,18 @@ margin-left:-20px;
   /* margin-top:140px; */
   padding-left:40px;
   opacity:1;
-  margin-top:30px;
+  margin-top:60px;
 
   /* background-color:grey; */
 
 
 }
 .affiliate{
+
   background-color:rgb(233, 227, 227);
   /* opacity:0.5; */
   /* margin:0 !important; */
+  margin-top:60px;
 }
 
 .affiliations:hover{
