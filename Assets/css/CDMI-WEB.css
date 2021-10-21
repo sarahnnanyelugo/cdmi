@@ -169,11 +169,11 @@ font-size:16px !important;
 
   .dropdown2:hover .dropdown2-content,  .dropdown2:hover .dropdown2-content-dark  {
     display:block ;
-    animation: fadein 2s;
-    -webkit-animation: fadein 2s;
-    -moz-animation: fadein 2s;
-    -o-animation: fadein 2s;
-    -ms-animation: fadein 2s;
+    animation: fadein 1s;
+    -webkit-animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    -o-animation: fadein 1s;
+    -ms-animation: fadein 1s;
      height:250px;
      opacity:1;
 
@@ -261,9 +261,9 @@ font-size:16px !important;
   }
 
   .column2 a:hover {
-    color: rgb(45, 105, 201)!important;
+    color:tomato !important;
     text-decoration:none;
-    background-color:black;
+    /* background-color:black; */
     /* font-weight:bold !important; */
   }
 
@@ -575,20 +575,29 @@ margin-left:-20px;
 
 .inline-photo.is-visible {
   opacity: 1;
-  transform: rotateZ(-2deg);
+  /* transform: rotateZ(-2deg); */
+  transform: rotateZ(-4deg);
+
 }
 .main-photo {
+  /* transform: scale(.8); */
   transform: scale(.8);
+
 }
 .inline-photo {
   border: 1em solid #fff;
   border-bottom: 4em solid #fff;
   border-radius: .25em;
-  box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+  /* box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2); */
+  box-shadow: 2em 2em 2em .26em rgba(0,0,0,.2);
+
   margin: 2em auto;
   opacity: 0;
-  transform: translateY(4em) rotateZ(-5deg);
-  transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+  /* transform: translateY(4em) rotateZ(-5deg); */
+  transform: translateY(5em) rotateZ(-6deg);
+  transition: transform 2s .20s cubic-bezier(0,1,.3,1),
+
+  /* transition: transform 4s .25s cubic-bezier(0,1,.3,1), */
               opacity .3s .25s ease-out;
   max-width: 600px;
   width: 90%;
@@ -663,6 +672,143 @@ background-color:transparent !important;
 color:white !important;
 border:1px solid white !important;
 }
+
+
+.galary{
+  height:190px;
+  width:200px;
+  border:solid 8px grey;
+
+}
+
+.photo:hover{
+  opacity:0.9;
+  height:190px;
+  margin-top:-190px;
+  /* padding-top:30px; */
+  background-color:black;
+  z-index:8;
+  position:relative;
+  overflow:hidden;
+  transition: .5s ease;
+
+}
+#red{
+  background-image:url("../img/About.png");
+  transform: rotate(270deg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  /* transform: rotate(45deg); */
+
+}
+#blue{
+  background-image:url("../img/Complab.png");
+  background-size:cover;
+  background-repeat:no-repeat;
+  margin-top:-210px;
+  /* transform: rotate(90deg); */
+  position:relative;
+  z-index:4;
+
+}
+#green{
+  background-image:url("../img/purple.png");
+  margin-top:-180px;
+  transform: rotate(135deg);
+position:relative;
+z-index:2;
+background-size:cover;
+background-repeat:no-repeat;
+}
+
+
+#grey{
+  background-image:url("../img/About.png");
+  transform: rotate(270deg);
+  background-size:cover;
+background-repeat:no-repeat;
+}
+
+#yellow{
+  background-image:url("../img/tailoring.png");
+  margin-top:-210px;
+  /* transform: rotate(90deg); */
+  position:relative;
+  z-index:4;
+  background-size:cover;
+background-repeat:no-repeat;
+
+}
+#black{
+  background-image:url("../img/About.png");
+  margin-top:-180px;
+  transform: rotate(135deg);
+position:relative;
+z-index:2;
+background-size:cover;
+background-repeat:no-repeat;
+}
+
+#orange{
+  background-image:url("../img/Boarding.png");
+  transform: rotate(270deg);
+  background-size:cover;
+  background-repeat:no-repeat;
+
+}
+
+
+#star{
+  background-image:url("../img/Boarding.png");
+  margin-top:-210px;
+  /* transform: rotate(90deg); */
+  position:relative;
+  z-index:4;
+  background-size:cover;
+background-repeat:no-repeat;
+}
+
+#circle{
+  background-image:url("../img/About.png");
+  margin-top:-180px;
+  transform: rotate(135deg);
+position:relative;
+z-index:2;
+background-size:cover;
+background-repeat:no-repeat;
+
+}
+
+#pink{
+  background-image:url("../img/Academics.png");
+  transform: rotate(270deg);
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+
+#purple{
+  background-image:url("../img/Academics.png");
+  margin-top:-210px;
+  /* transform: rotate(90deg); */
+  position:relative;
+  z-index:4;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+}
+
+#brown{
+  background-image:url("../img/Boarding.png");
+  margin-top:-180px;
+  transform: rotate(135deg);
+position:relative;
+z-index:2;
+background-size:cover;
+  background-repeat:no-repeat;
+
+}
+
 
 #events{
   margin-top:90px;
@@ -982,9 +1128,9 @@ footer a{
 }
 
 .L-links,.L-links:hover{
-  margin:10px;
-  font-size:12px;
-  font-weight:bold;
+  margin:12px;
+  font-size:14px;
+  font-weight:bolder;
   color:white;
   text-decoration:underline;
 }
@@ -1019,16 +1165,45 @@ footer a{
 }
 
 .handles{
-  height:30px;
+  height:60px;
 
   /* padding-left:50px; */
   /* flex:inline-end !important; */
 }
 
 
+.handles:hover{
+
+  animation:zoom-in-zoom-out 3s ease-out;
+}
+@keyframes zoom-in-zoom-out{
+0%{
+  transform:scale(1, 1);
+}10%{
+  transform:scale(1.3, 1.3);
+}
+100%{
+  transform:scale(1, 1);
+}
+}
 
 
 
+
+.media-globe:hover{
+
+  animation:zoom-in-zoom-out 3s ease-out;
+}
+@keyframes zoom-in-zoom-out{
+0%{
+  transform:scale(1, 1);
+}10%{
+  transform:scale(1.3, 1.3);
+}
+100%{
+  transform:scale(1, 1);
+}
+}
 
 
 
