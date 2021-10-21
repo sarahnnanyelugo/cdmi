@@ -1150,7 +1150,7 @@ border:groove 12px white;
 .slanted2 {
   margin: 45px;
   position: relative;
-  background-color: blue;
+  /* background-color: blue; */
   padding: 10px;
   z-index: 11;
 
@@ -1170,6 +1170,13 @@ border:groove 12px white;
   width: 120%;
   transform: skewX(-20deg);
 }
+
+.slanted2:hover{
+
+  animation:zoom-in-zoom-out 3s ease-out;
+}
+
+
 .affiliations{
   /* margin-top:140px; */
   padding-left:40px;
