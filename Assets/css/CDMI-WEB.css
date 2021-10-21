@@ -25,7 +25,7 @@ font-size:16px !important;
 
 #topnav{
     width:100%;
-    height:55px;
+    height:30px;
     background-color:rgb(1, 1, 29);
     color:white;
     /* text-align:center; */
@@ -36,11 +36,11 @@ font-size:16px !important;
 
 .navbar{
     /* background-color:transparent; */
-    height:120px;
+    height:60px;
     overflow: visible;
-    opacity:0.7;
+    opacity:0.6;
     display: block;
-    padding-bottom:3px;
+    /* padding-bottom:3px; */
 
 }
 
@@ -1122,6 +1122,54 @@ border:groove 12px white;
 }
 
 
+.slanted {
+  margin: 45px;
+  position: relative;
+  /* display: inline-block; */
+  background-color: blue;
+  padding:10px 0 0 60px !important;
+  z-index: 11;
+  /* margin-bottom:150px; */
+}
+
+.slanted:before {
+  position: absolute;
+  top: 0;
+  left: -10%;
+  width: 100%;
+  height: 200px;
+  content: "";
+  background: rgb(53, 53, 75);
+  z-index: -1;
+  /* padding-left: 80px !important; */
+}
+.sl-2:before {
+  width: 120%;
+  transform: skewX(-20deg);
+}
+.slanted2 {
+  margin: 45px;
+  position: relative;
+  background-color: blue;
+  padding: 10px;
+  z-index: 11;
+
+}
+
+.slanted2:before {
+  position: absolute;
+  top: 0;
+  left: -10%;
+  width: 100%;
+  height: 30px;
+  content: "";
+  background: rgb(53, 53, 75);
+  z-index: -1;
+}
+.sl-3:before {
+  width: 120%;
+  transform: skewX(-20deg);
+}
 .affiliations{
   /* margin-top:140px; */
   padding-left:40px;
