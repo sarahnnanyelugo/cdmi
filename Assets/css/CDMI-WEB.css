@@ -38,7 +38,7 @@ font-size:16px !important;
     /* background-color:transparent; */
     height:60px;
     overflow: visible;
-    opacity:0.6;
+    opacity:0.8;
     display: block;
     /* padding-bottom:3px; */
 
@@ -1191,9 +1191,9 @@ border:groove 12px white;
   }
 /* The side navigation menu */
 .sidenav {
-  height: 70%; /* 100% Full-height */
+  height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
-  position: relative; /* Stay in place */
+  position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
@@ -1204,9 +1204,9 @@ border:groove 12px white;
 
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
+/* The side navigation menu */
 
-/* The navigation menu links */
-.sidenav a {
+.sidenav a{
   padding: 0px 8px 8px 32px;
   text-decoration: none;
   font-size: 13px;
@@ -1222,7 +1222,7 @@ border:groove 12px white;
 }
 
 /* Position and style the close button (top right corner) */
-.sidenav .closebtn {
+.sidenav .closebtn{
   position: absolute;
   top: 0;
   right: 25px;
