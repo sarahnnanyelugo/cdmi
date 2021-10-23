@@ -1230,6 +1230,21 @@ border:groove 12px white;
   margin-left: 50px;
 }
 
+#scroll{
+background-image:url("../img/scroll.png");
+background-repeat:no-repeat;
+background-size:100%;
+padding:100px
+
+}
+
+.vicsmall{
+  font-size:0.6em
+}
+.viclarge{
+  font-size:0.8em
+}
+
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left .5s;
@@ -1418,7 +1433,7 @@ footer a{
   right: 0;
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.4);
-  background-image: url("data:image/svg+xml,%3Csvg width='36' height='36' viewBox='0 0 36 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.5 13.75C4.5 8.64137 8.64137 4.5 13.75 4.5C18.8586 4.5 23 8.64137 23 13.75C23 18.8586 18.8586 23 13.75 23C8.64137 23 4.5 18.8586 4.5 13.75ZM13.75 0C6.15609 0 0 6.15609 0 13.75C0 21.3439 6.15609 27.5 13.75 27.5C16.3774 27.5 18.8327 26.7631 20.9205 25.4846L30.4906 35.0547C31.7509 36.3151 33.7944 36.3151 35.0547 35.0547C36.3151 33.7944 36.3151 31.7509 35.0547 30.4906L25.4846 20.9205C26.7631 18.8327 27.5 16.3774 27.5 13.75C27.5 6.15609 21.3439 0 13.75 0Z' fill='white'/%3E%3C/svg%3E");
+  /* background-image: url("data:image/svg+xml,%3Csvg width='36' height='36' viewBox='0 0 36 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.5 13.75C4.5 8.64137 8.64137 4.5 13.75 4.5C18.8586 4.5 23 8.64137 23 13.75C23 18.8586 18.8586 23 13.75 23C8.64137 23 4.5 18.8586 4.5 13.75ZM13.75 0C6.15609 0 0 6.15609 0 13.75C0 21.3439 6.15609 27.5 13.75 27.5C16.3774 27.5 18.8327 26.7631 20.9205 25.4846L30.4906 35.0547C31.7509 36.3151 33.7944 36.3151 35.0547 35.0547C36.3151 33.7944 36.3151 31.7509 35.0547 30.4906L25.4846 20.9205C26.7631 18.8327 27.5 16.3774 27.5 13.75C27.5 6.15609 21.3439 0 13.75 0Z' fill='white'/%3E%3C/svg%3E"); */
   background-position: center;
   background-size: 1.85rem;
   background-repeat: no-repeat;
@@ -1445,6 +1460,12 @@ footer a{
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+
+.btn-pics{
+background-color:rgb(53, 53, 75) !important;
+color:white !important;
+float:right !important
 }
 
 .gallery-item:hover .thumb {
@@ -1559,11 +1580,12 @@ lightbox .lightbox-header {
 }
 .lightbox .lightbox-arrow.arrow-left {
   left: 0;
-  background-image: url("data:image/svg+xml,%3Csvg width='32' height='53' viewBox='0 0 32 53' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 26.5L27.3171 0L32 4.54286L9.36585 26.5L32 48.4571L27.3171 53L0 26.5Z' fill='white'/%3E%3C/svg%3E");
+  background-image:url("../img/neon.jpg" );
+
 }
 .lightbox .lightbox-arrow.arrow-right {
   right: 0;
-  background-image: url("data:image/svg+xml,%3Csvg width='32' height='53' viewBox='0 0 32 53' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M32 26.5L4.68293 53L0 48.4571L22.6341 26.5L3.83911e-06 4.54286L4.68293 0L32 26.5Z' fill='white'/%3E%3C/svg%3E");
+  background-color: #fff;
 }
 
 .lightbox .lightbox-slide {
