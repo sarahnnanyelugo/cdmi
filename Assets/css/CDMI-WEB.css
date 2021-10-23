@@ -655,7 +655,7 @@ margin-left:-20px;
 
 }
 #red{
-  background-image:url("../img/About.png");
+  background-image:url("../img/Complab.png");
   /* transform: rotate(330deg); */
   background-size:cover;
   background-repeat:no-repeat;
@@ -663,7 +663,7 @@ margin-left:-20px;
 
 }
 #blue{
-  background-image:url("../img/Complab.png");
+  background-image:url("../img/building9.jpeg");
   background-size:cover;
   background-repeat:no-repeat;
   margin-top:-210px;
@@ -691,7 +691,7 @@ background-repeat:no-repeat;
 }
 
 #yellow{
-  background-image:url("../img/tailoring.png");
+  background-image:url("../img/Complab.png");
   margin-top:-210px;
   /* transform: rotate(90deg); */
   position:relative;
@@ -749,7 +749,7 @@ background-repeat:no-repeat;
 
 
 #purple{
-  background-image:url("../img/Academics.png");
+  background-image:url("../img/sports1.jpeg");
   margin-top:-210px;
   /* transform: rotate(90deg); */
   position:relative;
