@@ -19,6 +19,7 @@
         <script src="Assets/js/popper.minjs"></script>
         <script src="Assets/js/bootstrap.min.js"></script>
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     
     </head>
@@ -29,7 +30,7 @@
         <!--div for side menu-->
 <div class="row">
     <div class="col-md-12">
-        <div id="mySidenav" class="sidenav col-md-2">
+        <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <span style="color:white"><i class="icofont-home"></i> </span><a href="#">About </a>
             <span style="color:white" ><i class="icofont-ui-contact-list"></i></span><a href="#">Services</a>
@@ -42,74 +43,94 @@
           </div>
     
           <!-- Use any element to open the sidenav -->
-          <span onclick="openNav()" style="color:tomato; font-weight:bolder;font-size:16px">SIDEMENU<i class="icofont-arrow-left" ></i></span>
+          <span onclick="openNav()" style="color:tomato; font-weight:bolder;font-size:16px; position:fixed">SIDEMENU<i class="icofont-arrow-left" ></i></span>
         
           <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-          <div id="main">
-            ...
+          <div id="main" >
+              <div class="row">
+                  <div class="col-md-1">&nbsp;</div>
+                  <div class="col-md-5">
+                      <h3>Contact Us</h3>
+
+                  </div>
+                  <div class="col-md-6">
+                      <h3>Admission Enquiries</h3>
+
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12" style="display:flex">
+                    <div class="col-md-4 col-4" style="background-color :rgb(241, 237, 237); ">
+                        <span><i class="icofont-location-pin"></i></span><p style="color: rgb(53, 53, 75); font-weight:bolder">
+                            12 Army Range Road Off Eneka/Igwuruta Road P.O. Box 2737 PH, Rivers State,
+                            Nigeria<br><br>
+                        </p>
+                        </div>
+                        <form class="col-md-4"><input type="email" class="form-control" id="email" placeholder="Email*"></form>
+                        <form class="col-md-4"> <input type="tel" class="form-control" id="phone" placeholder="Phone*">
+                        </form>
+
+                    </div>
+
+
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12" style="display:flex">
+                        <div class="col-md-4">&nbsp;</div>
+                          <form class="col-md-4" style="margin-top:-55px !important"><input type="text" class="form-control" id="name" placeholder="Name*"></form>
+                          <form class="col-md-4" style="margin-top:-55px !important"><input type="text" class="form-control" id="subject" placeholder="Subject*">
+                          </form>
+
+                      </div>
+
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12" style="display:flex">
+                        <div class="col-md-4 col-4" style="background-color :rgb(241, 237, 237); ">
+                            <span><i class="icofont-ui-message"></i></span><p style="color: rgb(53, 53, 75); font-weight:bolder">
+                                info@charlsedale.com<br><br>
+                            </p>
+                            </div>
+
+                                <form class="col-md-8">
+                                        <textarea id="message" class="form-control" rows="6" placeholder="Message*"></textarea>
+            
+            
+                                </form>
+
+
+
+
+                      </div>
+
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12" style="display:flex; margin-top:25px">
+                      <div class="col-md-4" style="background-color:rgb(241, 237, 237); "><p style="color: rgb(53, 53, 75); font-weight:bolder"><i class="icofont-phone"></i> +234(0)806 487 8929,08150903462</p></div>
+                      <div class="col-md-2"><button onclick="sendMail()" class="btn btn-primary" style="background-color: rgb(53, 53, 75); font-weight:bolder">SEND MESSAGE</button></div>
+
+                    </div>
+
+
+                </div>
+
+                  <div class="row">
+                    <div class="col-md-12 col-12" style="margin-top:30px"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11243.124843403602!2d7.0343327269580325!3d4.932141874258128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069d38cbd2d2a7f%3A0xe1a1999efb59b8d2!2sCharles%20Dale%20Memorial%20International%20School!5e0!3m2!1sen!2sng!4v1623025350061!5m2!1sen!2sng" height="350" width="100%"  style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+                </div>
+              </div>
+
+
+
+
+                
+
+                
+
           </div>
     </div>
     </div>
     <!--closing div for side menu-->
-<div>
-    <div class="row">
-        <div class="col-md-12 col-12" style="display:flex">
 
-            <div class="col-md-3 col-3">&nbsp;</div>
-    <div class="col-md-3 col-3" style="background-color:rgb(241, 237, 237); margin-bottom:50px">
-    <span><i class="icofont-location-pin"></i></span><p style="color: rgb(53, 53, 75); font-weight:bolder">12 Army Range Road Off Eneka/Igwuruta Road P.O. Box 2737 PH, Rivers State,
-        Nigeria
-    </p>
-    </div>
-    <div class="col-md-3">
-        <form>
-                <div  style=" margin-bottom:25px !important">
-                <input type="text" class="form-control" id="name" placeholder="Name*"></div>
-                <input type="text" class="form-control" id="subject" placeholder="Subject*">
-    
-        </form>
-    </div>
-    <div class="col-md-3" >
-        <form>
-                <div style=" margin-bottom:25px !important">
-                <input type="email" class="form-control" id="email" placeholder="Email*"></div>
-                <input type="tel" class="form-control" id="phone" placeholder="Phone*">
-    
-        </form>
-    </div>
-        </div></div>
-    
-        <div class="row">
-            <div class="col-md-12 col-12" style="display:flex">
-                <div class="col-md-3 col-3">&nbsp;</div>
-                <div class="col-md-3 col-3" style="background-color :rgb(241, 237, 237); ">
-                <span><i class="icofont-ui-message"></i></span><p style="color: rgb(53, 53, 75); font-weight:bolder">
-                    info@charlesdaleschool.com<br><br>
-                </p>
-                </div>
-                <div class="col-md-6" >
-                    <form >
-                            <textarea id="message" class="form-control" rows="4" placeholder="Message*"></textarea>
-    
-    
-                    </form>
-                </div>
-            </div>
-    
-        </div>
-    <div class="row">
-    <div class="col-md-12 col-12" style="display:flex; margin-top:25px">
-    <div class="col-md-3">&nbsp;</div>
-    <div class="col-md-3" style="background-color:rgb(241, 237, 237); "><p style="color: rgb(53, 53, 75); font-weight:bolder"><i class="icofont-phone"></i> +234(0)806 487 8929,08150903462</p></div>
-    <div class="col-md-2"><button onclick="sendMail()" class="btn btn-primary" style="background-color: rgb(53, 53, 75); font-weight:bolder">SEND MESSAGE</button></div>
-    </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-md-12 col-12" style="margin-top:30px"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11243.124843403602!2d7.0343327269580325!3d4.932141874258128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069d38cbd2d2a7f%3A0xe1a1999efb59b8d2!2sCharles%20Dale%20Memorial%20International%20School!5e0!3m2!1sen!2sng!4v1623025350061!5m2!1sen!2sng" height="350" width="1300"  style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
-    </div>
-    
-    </div>
     <!--closing div for contact us-->
 
 </div>
