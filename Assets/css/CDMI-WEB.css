@@ -1680,10 +1680,54 @@ lightbox .lightbox-header {
 
 }
 
+/*vision, mission and phylosophy*/
+.container {
+  height: 100%;
+}
+ .bg {
+    height: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  
+ }
+
+ /* Adding image to each div */
+  .image1 {
+  background-image: url("../img/v1.jpg");
+}
+.image2 {
+  background-image: url("../img/v2.jpg");
+}
+.image3 {
+  background-image: url("../img/v3.jpg");
+}
+.image4 {
+  background-image: url("../img/phy1.jpeg");
+}
+.image5 {
+  background-image: url("../img/mi.jpeg");
+}
+.text {
+   font-size: 30px;
+   top: 50%;
+   height: 50%;
+   left: 30%;
+   padding: 50px;
+   background-color: rgba(125,145,244,0.4);
+   color:white;
+   font-weight:bolder;
+   width: 100%;
+   text-align: center;
+   
+}
 
 
-
-
+.text h2{
+  color:red;
+  text-decoration:underline;
+}
 
 
 
