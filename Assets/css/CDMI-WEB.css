@@ -1799,7 +1799,7 @@ article.accordion2 section
   height: 12em;
   margin: 0.5em 0 0.5em 0.5em;
   color: #333;
-  background-color:  rgb(53, 53, 75);
+  background-colo;
   overflow: hidden;
   border-radius: 3px;
 }
@@ -1877,7 +1877,9 @@ article.accordion2
   /* width: 43em; */
   width:100%;
   margin: 0 auto;
-  background-color: #666;
+  /* background-color: #666; */
+  background-color: rgb(243, 238, 247);
+
   overflow: auto;
   border-radius: 5px;
   box-shadow: 0 3px 3px rgba(0,0,0,0.3);
@@ -1936,15 +1938,17 @@ article.accordion2 section:target
 {
   width: 30em;
   padding: 0 1em;
-  color: #333;
-  background-color: #fff;
+  color: white;
+  background: rgb(53, 53, 75);
+
 }
 article.accordion2 section:target h4
 {
   position: static;
   font-size: 1.3em;
   text-indent: 0;
-  color: #333;
+  color: white;
+
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
