@@ -1769,9 +1769,12 @@ lightbox .lightbox-header {
     transform:scale(1, 1);
   }
   }
-}
+  .policy{
+    color:rgba(47, 47, 212, 0.788);
+    background-color:rgb(236, 233, 233);
+margin-top:60px
 
-
+  }
 
 
 
