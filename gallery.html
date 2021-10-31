@@ -25,128 +25,165 @@
 
     <body>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
 
-<!--div for index galary-->
-
-<div class="row">
-    <div class="col-md-12" style="display:flex ; margin-top:30px">
-
-    <h3 class="col-md-2" style="background-color:rgb(1, 1, 29); color:white; text-align:center">our school</h3>
-    <div class="col-md-1">&nbsp;</div>
-    <h3 class="col-md-2" style="background-color:rgb(1, 1, 29); color:white;  text-align:center">Academic Facilities</h3>
-    <div class="col-md-1">&nbsp;</div>
-
-    <h3 class="col-md-2" style="background-color:rgb(1, 1, 29); color:white;  text-align:center">Sports</h3>
-    <div class="col-md-1">&nbsp;</div>
-
-    <h3 class="col-md-2" style="background-color:rgb(1, 1, 29); color:white;  text-align:center">Boarding</h3>
-
-    </div>
-        </div>
+            <div w3-include-html="Navbar.html"></div>
 
 
-<div style="min-height:500px;">
-<div class="row" style=" margin-top:70px" >
-
-    <div class="col-md-12" style="display:flex">
-<div class="col-md-3 ">
-    <div class="galary deg330" id="red">red</div>
-<div class="galary" id="blue"><div class="photo"><a href="our-School.html"><button class="btn btn-light btn-sm btn-trans">View Album</button></a></div></div>
-<div class="galary deg30" id="green">green</div>
-
-</div>
-
-
-<div class="col-md-3">
-    <div class="galary deg330" id="grey">red</div>
-<div class="galary" id="yellow"><div class="photo"><a href="ac-facilities.html"><button class="btn btn-light btn-sm btn-trans">View Album</button></a></div></div>
-<div class="galary deg30" id="black">green</div>
-
-
-
-</div>
-
-<div class="col-md-3">
-    <div class="galary deg330" id="pink">pink</div>
-<div class="galary" id="purple"><div class="photo"><a href="sports.html"><button class="btn btn-light btn-sm btn-trans">View Album</button></a></div></div>
-<div class="galary deg30" id="brown">brown</div>
-
-
-
-</div>
-<div class="col-md-3">
-    <div class="galary deg330" id="orange">red</div>
-<div class="galary" id="star"><div class="photo"><a href="boarding.html"><button class="btn btn-light btn-sm btn-trans">View Album</button></a></div></div>
-<div class="galary deg30" id="circle">green</div>
-
-
-
-</div>
-</div>
-</div>
-
-<div class="col-md-12" style="display:flex; margin-top:+90px !important">
-
-    <h3 class="col-md-2" style="background-color:rgb(1, 1, 29); color:white; text-align:center">Science Fair</h3>
-    <div class="col-md-1">&nbsp;</div>
-    <h3 class="col-md-2" style="background-color:rgb(1, 1, 29); color:white;  text-align:center">Excursions</h3>
-    <div class="col-md-1">&nbsp;</div>
-
-    <h3 class="col-md-2" style="background-color:rgb(1, 1, 29); color:white;  text-align:center">Arts/Creativity</h3>
-    <div class="col-md-1">&nbsp;</div>
-
-    <h3 class="col-md-2" style="background-color:rgb(1, 1, 29); color:white;  text-align:center">Board of Directors</h3>
-
-
-    </div>
-
-
-<div class="row" style=" margin-top:70px">
-    <div class="col-md-12" style="display:flex">
-<div class="col-md-3">
-    <div class="galary deg330" id="red">red</div>
-<div class="galary" id="blue" style="background-image:url(Assets/img/science2.jpg) !important"><div class="photo"><a href="Science.html"><button class="btn btn-light btn-sm btn-trans">View Album</button></a></div></div>
-<div class="galary deg30" id="green">green</div>
-
-</div>
-
-<div class="col-md-3">
-    <div class="galary deg330" id="grey">red</div>
-<div class="galary" id="yellow" style="background-image:url(Assets/img/tour.png) !important"><div class="photo" ><a href="excursions.html"><button class="btn btn-light btn-sm btn-trans">View Album</button></a></div></div>
-<div class="galary deg30" id="black">green</div>
-
-
-
-</div>
-
-<div class="col-md-3">
-    <div class="galary deg330" id="pink">pink</div>
-<div class="galary" id="purple" style="background-image:url(Assets/img/arts3.jpeg) !important"><div class="photo"><a href="arts.html"><button class="btn btn-light btn-sm btn-trans">View Album</button></a></div></div>
-<div class="galary deg30" id="brown">brown</div>
-
-
-
-</div>
-<div class="col-md-3">
-    <div class="galary deg330" id="orange">red</div>
-<div class="galary" id="star" style="background-image:url(Assets/img/victoria.png) !important"><div class="photo" ><a href="board.html"><button class="btn btn-light btn-sm btn-trans">View Album</button></a></div></div>
-<div class="galary deg30" id="circle">green</div>
-
-
-
-</div>
-</div>
-</div></div>
-
-<!--end of index galary-->
-
-
-                </div>
-
+            <div class="row col-md-12" style="margin:0 !important">
+                <img src="Assets/img/Photography.png" width="100%">
+    
             </div>
 
+
+
+            <div class="row">
+                <div class="col-md-12" style="height:50% !important; width:100%; ">
+                    <div id="mySidenav" class="sidenav  " >
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <span style="color:white"><i class="icofont-home"></i> </span><a href="welcomeAdd.html">welcome Address </a>
+                        <span style="color:white" ><i class="icofont-ui-contact-list"></i></span><a href="achievements.html">Achievements</a>
+                        <span style="color:white"><i class="icofont-award"></i></span><a href="vision">Our story/vision/mission</a>
+                        <span style="color:white"><i class="icofont-question"></i></span><a href="gallery.html">Gallery</a>
+                        <span style="color:white"><i class="icofont-home"></i> </span><a href="#">Calender </a>
+                        <span style="color:white" ><i class="icofont-ui-contact-list"></i></span><a href="contacts.html">Contacts/Direction</a>
+                        <span style="color:white"><i class="icofont-award"></i></span><a href="schoolPolicy.html">School Policies</a>
+                        <span style="color:white"><i class="icofont-question"></i></span><a href="alumni.html">Alumni</a>
+                      </div>
+                
+                   <!-- Use any element to open the sidenav -->
+                   <span onclick="openNav()" style="position:fixed; cursor:pointer; top:200px; "><img src="Assets/img/sidebar-icon.jpg" height="60px"></span>
+                
+                   <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+                   <div id="main">
+
+                    <h6 style="font-size:13px; color:rgb(43, 43, 109); font-weight:bold">About</h6>
+        <h3><span style="border-bottom:solid 1px blue; ">Take a </span>Tour</h3>
+
+                    <div class="row">
+                        <div class="col-md-12" style="display:flex ; margin-top:30px">
+                    
+                        <h3 class="col-md-2" style="background-color:rgb(1, 1, 29); color:white; text-align:center">our school</h3>
+                        <div class="col-md-1">&nbsp;</div>
+                        <h3 class="col-md-2" style="background-color:rgb(1, 1, 29); color:white;  text-align:center">Academic Facilities</h3>
+                        <div class="col-md-1">&nbsp;</div>
+                    
+                        <h3 class="col-md-2" style="background-color:rgb(1, 1, 29); color:white;  text-align:center">Sports</h3>
+                        <div class="col-md-1">&nbsp;</div>
+                    
+                        <h3 class="col-md-2" style="background-color:rgb(1, 1, 29); color:white;  text-align:center">Boarding</h3>
+                    
+                        </div>
+                            </div>
+                    
+                    
+                    <div style="min-height:500px;">
+                    <div class="row" style=" margin-top:70px" >
+                    
+                        <div class="col-md-12" style="display:flex">
+                    <div class="col-md-3 ">
+                        <div class="galary deg330" id="red">red</div>
+                    <div class="galary" id="blue"><div class="photo"><a href="our-School.html"><button class="btn btn-light btn-sm btn-trans">View Album</button></a></div></div>
+                    <div class="galary deg30" id="green">green</div>
+                    
+                    </div>
+                    
+                    
+                    <div class="col-md-3">
+                        <div class="galary deg330" id="grey">red</div>
+                    <div class="galary" id="yellow"><div class="photo"><a href="ac-facilities.html"><button class="btn btn-light btn-sm btn-trans">View Album</button></a></div></div>
+                    <div class="galary deg30" id="black">green</div>
+                    
+                    
+                    
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="galary deg330" id="pink">pink</div>
+                    <div class="galary" id="purple"><div class="photo"><a href="sports.html"><button class="btn btn-light btn-sm btn-trans">View Album</button></a></div></div>
+                    <div class="galary deg30" id="brown">brown</div>
+                    
+                    
+                    
+                    </div>
+                    <div class="col-md-3">
+                        <div class="galary deg330" id="orange">red</div>
+                    <div class="galary" id="star"><div class="photo"><a href="boarding.html"><button class="btn btn-light btn-sm btn-trans">View Album</button></a></div></div>
+                    <div class="galary deg30" id="circle">green</div>
+                    
+                    
+                    
+                    </div>
+                    </div>
+                    </div>
+                    
+                    <div class="col-md-12" style="display:flex; margin-top:+90px !important">
+                    
+                        <h3 class="col-md-2" style="background-color:rgb(1, 1, 29); color:white; text-align:center">Science Fair</h3>
+                        <div class="col-md-1">&nbsp;</div>
+                        <h3 class="col-md-2" style="background-color:rgb(1, 1, 29); color:white;  text-align:center">Excursions</h3>
+                        <div class="col-md-1">&nbsp;</div>
+                    
+                        <h3 class="col-md-2" style="background-color:rgb(1, 1, 29); color:white;  text-align:center">Arts/Creativity</h3>
+                        <div class="col-md-1">&nbsp;</div>
+                    
+                        <h3 class="col-md-2" style="background-color:rgb(1, 1, 29); color:white;  text-align:center">Board of Directors</h3>
+                    
+                    
+                        </div>
+                    
+                    
+                    <div class="row" style=" margin-top:70px">
+                        <div class="col-md-12" style="display:flex">
+                    <div class="col-md-3">
+                        <div class="galary deg330" id="red">red</div>
+                    <div class="galary" id="blue" style="background-image:url(Assets/img/science2.jpg) !important"><div class="photo"><a href="Science.html"><button class="btn btn-light btn-sm btn-trans">View Album</button></a></div></div>
+                    <div class="galary deg30" id="green">green</div>
+                    
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="galary deg330" id="grey">red</div>
+                    <div class="galary" id="yellow" style="background-image:url(Assets/img/tour.png) !important"><div class="photo" ><a href="excursions.html"><button class="btn btn-light btn-sm btn-trans">View Album</button></a></div></div>
+                    <div class="galary deg30" id="black">green</div>
+                    
+                    
+                    
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="galary deg330" id="pink">pink</div>
+                    <div class="galary" id="purple" style="background-image:url(Assets/img/arts3.jpeg) !important"><div class="photo"><a href="arts.html"><button class="btn btn-light btn-sm btn-trans">View Album</button></a></div></div>
+                    <div class="galary deg30" id="brown">brown</div>
+                    
+                    
+                    
+                    </div>
+                    <div class="col-md-3">
+                        <div class="galary deg330" id="orange">red</div>
+                    <div class="galary" id="star" style="background-image:url(Assets/img/victoria.png) !important"><div class="photo" ><a href="board.html"><button class="btn btn-light btn-sm btn-trans">View Album</button></a></div></div>
+                    <div class="galary deg30" id="circle">green</div>
+                    
+                    
+                    
+                    </div>
+                    </div>
+                    </div></div>
+                    
+                    <!--end of index galary-->
+                    
+                    
+                                    </div>
+                    
+                                </div>
+
+</div>
+<!--div for index galary-->
+
+<div w3-include-html="footer.html"></div>
+
         </div>
+
+        <script src="Assets/js/custom.js"></script>
+
     </body>
 </html>

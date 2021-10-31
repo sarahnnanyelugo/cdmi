@@ -26,23 +26,32 @@
 
         <div class="container-fluid">
 
+          <div w3-include-html="Navbar.html"></div>
+
+
+          <div class="row col-md-12" style="margin:0 !important">
+              <img src="Assets/img/admission.png" width="100%">
+  
+          </div>
+
+
             <div class="row">
                 <div class="col-md-12"  style="height:50% !important; width:100%; ">
-                    <div id="mySidenav" class="sidenav ">
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <span style="color:white"><i class="icofont-home"></i> </span><a href="#">About </a>
-                        <span style="color:white" ><i class="icofont-ui-contact-list"></i></span><a href="#">Services</a>
-                        <span style="color:white"><i class="icofont-award"></i></span><a href="#">Our story/vision/mission</a>
-                        <span style="color:white"><i class="icofont-question"></i></span><a href="#">Contact</a>
-                        <span style="color:white"><i class="icofont-home"></i> </span><a href="#">About </a>
-                        <span style="color:white" ><i class="icofont-ui-contact-list"></i></span><a href="#">Services</a>
-                        <span style="color:white"><i class="icofont-award"></i></span><a href="#">Clients</a>
-                        <span style="color:white"><i class="icofont-question"></i></span><a href="#">Contact</a>
-                      </div>
+                  <div id="mySidenav" class="sidenav  " >
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <span style="color:white"><i class="icofont-home"></i> </span><a href="welcomeAdd.html">welcome Address </a>
+                    <span style="color:white" ><i class="icofont-ui-contact-list"></i></span><a href="achievements.html">Achievements</a>
+                    <span style="color:white"><i class="icofont-award"></i></span><a href="vision">Our story/vision/mission</a>
+                    <span style="color:white"><i class="icofont-question"></i></span><a href="gallery.html">Gallery</a>
+                    <span style="color:white"><i class="icofont-home"></i> </span><a href="#">Calender </a>
+                    <span style="color:white" ><i class="icofont-ui-contact-list"></i></span><a href="contacts.html">Contacts/Direction</a>
+                    <span style="color:white"><i class="icofont-award"></i></span><a href="schoolPolicy.html">School Policies</a>
+                    <span style="color:white"><i class="icofont-question"></i></span><a href="alumni.html">Alumni</a>
+                  </div>
                 
                       <!-- Use any element to open the sidenav -->
-                      <span onclick="openNav()" style="color:tomato; font-weight:bolder;font-size:16px; position: fixed; cursor:pointer; ">SIDEMENU<i class="icofont-arrow-left" ></i></span>
-                    
+                      <span onclick="openNav()" style="position:fixed; cursor:pointer; top:200px; "><img src="Assets/img/sidebar-icon.jpg" height="60px"></span>
+
                       <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
                       <div id="main">
 
@@ -147,50 +156,18 @@
 
 
           </div>
+
+          <div w3-include-html="footer.html"></div>
+
           </div>
-          </div><!--container-fluid-->
+         <!--container-fluid-->
 
           <!--script for side bar menu-->
-<script>
-    function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  $("#vic").removeClass("viclarge");
-  $("#vic").addClass("vicsmall");
 
-
-  document.getElementById("main").style.marginLeft = "250px";
-}
-
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
-  $("#vic").removeClass("vicsmall");
-  $("#vic").addClass("viclarge");
-}
-</script>
 
 
 <!--script for accordion-->
-<script>
-  var acc = document.getElementsByClassName("accordion");
-var i;
+<script src="Assets/js/custom.js"></script>
 
-for (i = 0; i < acc.length; i++) {
-acc[i].addEventListener("click", function() {
-/* Toggle between adding and removing the "active" class,
-to highlight the button that controls the panel */
-this.classList.toggle("active");
-
-/* Toggle between hiding and showing the active panel */
-var panel = this.nextElementSibling;
-if (panel.style.display === "block") {
-panel.style.display = "none";
-} else {
-panel.style.display = "block";
-}
-});
-}
-</script>
     </body>
 </html>

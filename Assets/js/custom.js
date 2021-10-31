@@ -1,109 +1,170 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            CharlesDale Landing Page Web
-        </title>
-        <link href="/Assets/css/bootstrap.min.css" rel="stylesheet">
-        <link href="Assets/icofont/icofont.min.css" rel="stylesheet">
-        <link href="Assets/css/CDMI-WEB.css" rel="stylesheet" type="text/css">
-        <link href="Assets/fontawesome-free-5.15.3-web/css/fontawesome.min.css" rel="stylesheet">
-        <link href="Assets/css/radialMenu.min.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js">
-        <!-- <link href="Assets/css/charlsedale.css" rel="stylesheet" type="text/css"> -->
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4) {
+          if (this.status == 200) {
+            elmnt.innerHTML = this.responseText;
+          }
+          if (this.status == 404) {
+            elmnt.innerHTML = "Page not found.";
+          }
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      };
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+includeHTML();
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
-        <script src="Assets/js/jquery-3-5.min.js"></script>
-        <script src="Assets/js/popper.minjs"></script>
-        <script src="Assets/js/bootstrap.min.js"></script>
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+window.addEventListener("DOMContentLoaded", (event) => {
+  jQuery("div#navbar.navbar").css("background-color", "rgba(255, 255, 255, 0)");
+  jQuery(".dropbtn2").css("color", "rgb(1, 1, 29)");
+  jQuery(".column2 a").css("color", "white");
 
-    
-    </head>
-<body>
+  jQuery(window).scroll(function () {
+    if (jQuery(window).scrollTop() > 0) {
+      jQuery("div#navbar.navbar").css("background-color", "rgb(1, 1, 29)");
+      jQuery(".dropbtn2").css("color", "rgba(255, 255, 255, 1)");
+      jQuery(".column2 a").css("color", "rgb(1, 1, 29)");
 
-    <div class="container-fluid">
+      jQuery(".ddc").addClass("dropdown2-content");
+      jQuery(".ddc").removeClass("dropdown2-content-dark");
+    } else {
+      jQuery("div#navbar.navbar").css(
+        "background-color",
+        "rgba(255, 255, 255, 0)"
+      );
+      jQuery(".dropbtn2").css("color", "rgb(1, 1, 29)");
+      jQuery(".ddc").removeClass("dropdown2-content");
+      jQuery(".ddc").addClass("dropdown2-content-dark");
+      jQuery(".column2 a").css("color", "white");
+    }
+  });
+});
 
-        <div w3-include-html="Navbar.html"></div>
+jQuery(document).ready(function () {
+  jQuery(".icofont-search-1").click(function () {
+    jQuery(this).addClass("Search-container");
+  });
+});
+
+$(document).ready(function () {
+  $(".icofont-search-1").click(function () {
+    $(this).addClass("Search-container");
+  });
+});
+
+$(function () {
+  $(".c_h").click(function (e) {
+    if ($(".chat_container").is(":visible")) {
+      $(".c_h .right_c .mini").text("+");
+    } else {
+      $(".c_h .right_c .mini").text("-");
+    }
+    $(".chat_container").slideToggle("slow");
+    return false;
+  });
+});
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
 
 
-        <div class="row col-md-12" style="margin:0 !important">
-            <img src="Assets/img/A-facilities.png" width="100%">
 
-        </div>
 
-        <h6 style="font-size:13px; color:rgb(43, 43, 109); font-weight:bold; margin-top:40px">GALLERY</h6>
-        <h3><span style="border-bottom:solid 1px blue; ">Our Science Exhibitions</h3>
+function sendMail(){
+    var name=document.getElementById("name").value;
+    var email=document.getElementById("email").value;
+    var subject=document.getElementById("subject").value;
+    var phone=document.getElementById("phone").value;
+    var message=document.getElementById("message").value
 
-        <div class="gallery">
-            <div class="gallery-item item-3x4">
-                <img class="thumb placeholder" src="Assets/img/laboratory.png" data-src="Assets/img/laboratory.png" data-image="Assets/img/laboratory.png" data-title="Stepping into the future" alt="students">
-                <div class="caption"><span>Stepping into the future</span></div>
-            </div>
+    var payload={name:name, email:email, subject:subject, phone:phone, message:message}
+    sendToAdmin(payload);
+    sendToUser(payload)
+    }
+function sendToAdmin(arr){
+    Email.send({
+    Host: "smtp.gmail.com",
+    Username: "hexxondiv",
+    Password: "ltzmmwihyzflcpbp",
+    To: 'ukohasarah@gmail.com',
+    From: "hexxondiv@gmail.com",
+    Subject: arr.name +" contacted you",
+    Body: "Hello admin. " +arr.name+" sent you a contact message. Here is the message: "+arr.message+
+    " here is their phone number: "+arr.phone+" here is their email: "+arr.email,
+  })
+    .then(function (message) {
+      console.log("mail sent successfully to Admin")
+    });
 
-            <div class="gallery-item item-4x3">
-                <img class="thumb placeholder" src="Assets/img/Maintainance.png" data-src="Assets/img/Maintainance.png" data-image="Assets/img/Maintainance.png" data-title="Stepping into the future" alt="compound">
-                <div class="caption"><span>Stepping into the future</span></div>
-            </div>
+}
+function sendToUser(arr){
+    Email.send({
+    Host: "smtp.gmail.com",
+    Username: "hexxondiv",
+    Password: "ltzmmwihyzflcpbp",
+    To: arr.email,
+    From: "hexxondiv@gmail.com",
+    Subject: "we received your message",
+    Body: "Hello "+arr.name+". we received your contact message. An Admin will contact you shortly. Thanks",
+  })
+    .then(function (message) {
+      alert("mail sent successfully")
+    });
 
-            <div class="gallery-item item-3x4">
-                <img class="thumb placeholder" src="Assets/img/science2.jpg" data-src="Assets/img/science2.jpg" data-image="Assets/img/science2.jpg" data-title="Stepping into the future" alt="hall way">
-                <div class="caption"><span>Stepping into the future</span></div>
-            </div>
+}
 
-            <div class="gallery-item item-4x3">
-                <img class="thumb placeholder" src="Assets/img/Maintainance.png" data-src="Assets/img/Maintainance.png" data-image="Assets/img/Maintainance.png" data-title="Stepping into the future" alt="building">
-                <div class="caption"><span>Stepping into the future</span></div>
-            </div>
-            <div class="gallery-item item-3x4">
-                <img class="thumb placeholder" src="Assets/img/science2.jpg" data-src="Assets/img/science2.jpg" data-image="Assets/img/science2.jpg" data-title=" Stepping into the future" alt="building">
-                <div class="caption"><span>Stepping into the future</span></div>
-            </div>
 
-            <div class="gallery-item item-4x3">
-                <img class="thumb placeholder" src="Assets/img/laboratory.png" data-src="Assets/img/laboratory.png" data-image="Assets/img/laboratory.png" data-title="Stepping into the future">
-                <div class="caption"><span>Stepping into the future</span></div>
-            </div>
 
-            <div class="gallery-item item-3x4">
-                <img class="thumb placeholder" src="Assets/img/science2.jpg" data-src="Assets/img/science2.jpg" data-image="Assets/img/science2.jpg" data-title="Stepping into the future" alt="building">
-                <div class="caption"><span>Stepping into the future</span></div>
-            </div>
 
-            <div class="gallery-item item-4x3">
-                <img class="thumb placeholder" src="Assets/img/laboratory.png" data-src="Assets/img/laboratory.png" data-image="Assets/img/laboratory.png" data-title="Stepping into the future" alt="building">
-                <div class="caption"><span>Stepping into the future</span></div>
-            </div>
-            <div class="gallery-item item-3x4">
-                <img class="thumb placeholder" src="Assets/img/science1.jpeg" data-src="Assets/img/science1.jpeg" data-image="Assets/img/science1.jpeg" data-title="Stepping into the future" alt="building">
-                <div class="caption"><span>Stepping into the future</span></div>
-            </div>
 
-            <div class="gallery-item item-4x3">
-                <img class="thumb placeholder" src="Assets/img/laboratory.png" data-src="Assets/img/laboratory.png" data-image="Assets/img/laboratory.png" data-title="Stepping into the future" alt="building">
-                <div class="caption"><span>Stepping into the future</span></div>
-            </div>
+var acc = document.getElementsByClassName("accordion");
+var i;
 
-            <div class="gallery-item item-3x4">
-                <img class="thumb placeholder" src="Assets/img/science1.jpeg" data-src="Assets/img/science1.jpeg" data-image="Assets/img/science1.jpeg" data-title="Stepping into the future" alt="School building">
-                <div class="caption"><span>Stepping into the future</span></div>
-            </div>
+for (i = 0; i < acc.length; i++) {
+acc[i].addEventListener("click", function() {
+/* Toggle between adding and removing the "active" class,
+to highlight the button that controls the panel */
+this.classList.toggle("active");
 
-            <div class="gallery-item item-4x3">
-                <img class="thumb placeholder" src="Assets/img/laboratory.png" data-src="Assets/img/laboratory.png" data-image="Assets/img/laboratory.png" data-title="Stepping into the future" alt="School building">
-                <div class="caption"><span>Stepping into the future</span></div>
-            </div>
-        </div>
-        <a href="gallery.html" class="btn btn-lg btn-pics" >Back to gallery</a>
-        <div w3-include-html="footer.html"></div>
+/* Toggle between hiding and showing the active panel */
+var panel = this.nextElementSibling;
+if (panel.style.display === "block") {
+panel.style.display = "none";
+} else {
+panel.style.display = "block";
+}
+});
+}
 
-</div>
 
-<!-- Gallery JS -->
-<!-- <script>
-    const isSrcsetSupported = 'srcset' in new Image();
+//for gallery
+
+const isSrcsetSupported = 'srcset' in new Image();
 const swipingThreshold = 5;
 
 let $lightbox;
@@ -532,7 +593,7 @@ function getLoopedIndex(index) {
 function mapRange(value, fromIn, toIn, fromOut, toOut) {
     return fromOut + (toOut - fromOut) * (value - fromIn) / (toIn - fromIn);
 }
-</script> -->
-<script src="Assets/js/custom.js"></script>
-</body>
-</html>
+
+//end of gallery
+
+

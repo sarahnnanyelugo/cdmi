@@ -1684,13 +1684,9 @@ button.swiper-pagination-bullet {
 
 #monials{
   margin-top:120px;
-  /* padding-top:30px; */
   padding-left:50px;
   height:500px;
-  /* width:100%; */
-  /* background-image:url("../img/frequently.png"); */
   background-image:url("../img/A-facilities.png");
-
   background-repeat:no-repeat;
   background-size:100% 100%;
 
@@ -1708,11 +1704,9 @@ button.swiper-pagination-bullet {
 }
 
 #commentbox1{
-  /* margin-left:-40px; */
-  /* margin-top:-40px !important; */
+
   max-height:620px;
   overflow:hidden;
-  /* display:flex; */
 }
 
 #award{
@@ -2076,18 +2070,18 @@ border:groove 12px white;
   }
 /* The side navigation menu */
 .sidenav {
-  height: 100%; /* 100% Full-height */
+  height: 50% !important;/* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+  margin-top: 0;/*  Stay at the top */
   left: 0;
   background: rgb(53, 53, 75);
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px; /* Place content 60px from the top */
   padding-bottom: 20px; /* Place content 60px from the top */
-
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  top:100px;
+  transition: 1s; /* 0.5 second transition effect to slide in the sidenav */
 }
 /* The side navigation menu */
 

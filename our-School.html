@@ -25,6 +25,17 @@
 <body>
 
     <div class="container-fluid">
+
+        <div w3-include-html="Navbar.html"></div>
+
+
+        <div class="row col-md-12" style="margin:0 !important">
+            <img src="Assets/img/library.png" width="100%">
+
+        </div>
+        <h6 style="font-size:13px; color:rgb(43, 43, 109); font-weight:bold; margin-top:40px">GALLERY</h6>
+        <h3><span style="border-bottom:solid 1px blue; ">Our School</span> Album</h3>
+
         <div class="gallery">
             <div class="gallery-item item-3x4">
                 <img class="thumb placeholder" src="Assets/img/building2.jpeg" data-src="Assets/img/building2.jpeg" data-image="Assets/img/building2.jpeg" data-title="School compound" alt="students">
@@ -86,10 +97,18 @@
         </div>
         <a href="gallery.html" class="btn btn-lg btn-pics" >Back to gallery</a>
 
+
+
+        <div w3-include-html="footer.html"></div>
+
 </div>
 
 <!-- Gallery JS -->
-<script>
+<script src="Assets/js/custom.js"></script>
+
+
+
+<!-- <script>
     const isSrcsetSupported = 'srcset' in new Image();
 const swipingThreshold = 5;
 
@@ -519,7 +538,9 @@ function getLoopedIndex(index) {
 function mapRange(value, fromIn, toIn, fromOut, toOut) {
     return fromOut + (toOut - fromOut) * (value - fromIn) / (toIn - fromIn);
 }
-</script>
-<script src='js/gallery.js'></script>
+</script> -->
+
+
+
 </body>
 </html>

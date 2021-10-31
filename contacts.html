@@ -26,25 +26,34 @@
 <body>
 
     <div class="container-fluid">
-        <!--div for contact us-->
-        <!--div for side menu-->
+
+      <div w3-include-html="Navbar.html"></div>
+
+
+      <div class="row col-md-12" style="margin:0 !important">
+          <img src="Assets/img/entrance.png" width="100%">
+
+      </div>
+
+
+
 <div class="row">
     <div class="col-md-12">
-        <div id="mySidenav" class="sidenav">
+        <div id="mySidenav" class="sidenav  " >
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <span style="color:white"><i class="icofont-home"></i> </span><a href="#">About </a>
-            <span style="color:white" ><i class="icofont-ui-contact-list"></i></span><a href="#">Services</a>
-            <span style="color:white"><i class="icofont-award"></i></span><a href="#">Our story/vision/mission</a>
-            <span style="color:white"><i class="icofont-question"></i></span><a href="#">Contact</a>
-            <span style="color:white"><i class="icofont-home"></i> </span><a href="#">About </a>
-            <span style="color:white" ><i class="icofont-ui-contact-list"></i></span><a href="#">Services</a>
-            <span style="color:white"><i class="icofont-award"></i></span><a href="#">Clients</a>
-            <span style="color:white"><i class="icofont-question"></i></span><a href="#">Contact</a>
+            <span style="color:white"><i class="icofont-home"></i> </span><a href="welcomeAdd.html">welcome Address </a>
+            <span style="color:white" ><i class="icofont-ui-contact-list"></i></span><a href="achievements.html">Achievements</a>
+            <span style="color:white"><i class="icofont-award"></i></span><a href="vision">Our story/vision/mission</a>
+            <span style="color:white"><i class="icofont-question"></i></span><a href="gallery.html">Gallery</a>
+            <span style="color:white"><i class="icofont-home"></i> </span><a href="#">Calender </a>
+            <span style="color:white" ><i class="icofont-ui-contact-list"></i></span><a href="contacts.html">Contacts/Direction</a>
+            <span style="color:white"><i class="icofont-award"></i></span><a href="schoolPolicy.html">School Policies</a>
+            <span style="color:white"><i class="icofont-question"></i></span><a href="alumni.html">Alumni</a>
           </div>
     
           <!-- Use any element to open the sidenav -->
-          <span onclick="openNav()" style="color:tomato; font-weight:bolder;font-size:16px; position:fixed">SIDEMENU<i class="icofont-arrow-left" ></i></span>
-        
+          <span onclick="openNav()" style="position:fixed; cursor:pointer; top:200px; "><img src="Assets/img/sidebar-icon.jpg" height="60px"></span>
+
           <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
           <div id="main" >
               <div class="row">
@@ -128,61 +137,22 @@
 
           </div>
     </div>
+
+
+    <div w3-include-html="footer.html"></div>
+
     </div>
     <!--closing div for side menu-->
 
     <!--closing div for contact us-->
 
-</div>
+
 
 <!---script for contacts-->
-<script>
-    function sendMail(){
-        var name=document.getElementById("name").value;
-        var email=document.getElementById("email").value;
-        var subject=document.getElementById("subject").value;
-        var phone=document.getElementById("phone").value;
-        var message=document.getElementById("message").value
-
-        var payload={name:name, email:email, subject:subject, phone:phone, message:message}
-        sendToAdmin(payload);
-        sendToUser(payload)
-        }
-    function sendToAdmin(arr){
-        Email.send({
-        Host: "smtp.gmail.com",
-        Username: "hexxondiv",
-        Password: "ltzmmwihyzflcpbp",
-        To: 'ukohasarah@gmail.com',
-        From: "hexxondiv@gmail.com",
-        Subject: arr.name +" contacted you",
-        Body: "Hello admin. " +arr.name+" sent you a contact message. Here is the message: "+arr.message+
-        " here is their phone number: "+arr.phone+" here is their email: "+arr.email,
-      })
-        .then(function (message) {
-          console.log("mail sent successfully to Admin")
-        });
-
-    }
-    function sendToUser(arr){
-        Email.send({
-        Host: "smtp.gmail.com",
-        Username: "hexxondiv",
-        Password: "ltzmmwihyzflcpbp",
-        To: arr.email,
-        From: "hexxondiv@gmail.com",
-        Subject: "we received your message",
-        Body: "Hello "+arr.name+". we received your contact message. An Admin will contact you shortly. Thanks",
-      })
-        .then(function (message) {
-          alert("mail sent successfully")
-        });
-
-    }
-</script>
+<script src="Assets/js/custom.js"></script>
 
 <!--script for side bar menu-->
-<script>
+<!-- <script>
     function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
@@ -194,6 +164,6 @@ function closeNav() {
   document.getElementById("main").style.marginLeft = "0";
 }
 </script>
-<script src='js/gallery.js'></script>
+<script src='js/gallery.js'></script> -->
 </body>
 </html>

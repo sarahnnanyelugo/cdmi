@@ -27,22 +27,30 @@
     <body>
         <div class="container-fluid">
 
+          <div w3-include-html="Navbar.html"></div>
+
+
+          <div class="row col-md-12" style="margin:0 !important">
+              <img src="Assets/img/curriculum.png" width="100%">
+  
+          </div>
+
+
             <div class="row">
                 <div class="col-md-12 col-12" style="height:50% !important; width:100%; ">
                     <div id="mySidenav" class="sidenav  " >
                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                     <span style="color:white"><i class="icofont-home"></i> </span><a href="#">About </a>
-                     <span style="color:white" ><i class="icofont-ui-contact-list"></i></span><a href="#">Services</a>
-                     <span style="color:white"><i class="icofont-award"></i></span><a href="#">Our story/vision/mission</a>
-                     <span style="color:white"><i class="icofont-question"></i></span><a href="#">Contact</a>
-                     <span style="color:white"><i class="icofont-home"></i> </span><a href="#">About </a>
-                     <span style="color:white" ><i class="icofont-ui-contact-list"></i></span><a href="#">Services</a>
-                     <span style="color:white"><i class="icofont-award"></i></span><a href="#">Clients</a>
-                     <span style="color:white"><i class="icofont-question"></i></span><a href="#">Contact</a>
+                     <span style="color:white"><i class="icofont-home"></i> </span><a href="apply.html">Apply to CDMIS </a>
+                     <span style="color:white" ><i class="icofont-ui-contact-list"></i></span><a href="procedure.html">Admission Procedure</a>
+                     <span style="color:white"><i class="icofont-award"></i></span><a href="entrance.html">Entrance Examination</a>
+                     <span style="color:white"><i class="icofont-question"></i></span><a href="faq.html">FAQs</a>
+                     <span style="color:white"><i class="icofont-home"></i> </span><a href="scholarship.html">Scholarships </a>
+                     <span style="color:white" ><i class="icofont-ui-contact-list"></i></span><a href="#">Boarding</a>
+                     <span style="color:white"><i class="icofont-award"></i></span><a href="fees.html">School Tuition Fees</a>
                    </div>
 
                    <!-- Use any element to open the sidenav -->
-                   <span onclick="openNav()" style="color:tomato; position: fixed; font-weight:bolder;font-size:16px; cursor:pointer"><i class="icofont-arrow-left" ></i>SIDEMENU</span>
+                   <span onclick="openNav()" style="position:fixed; cursor:pointer; top:200px; "><img src="Assets/img/sidebar-icon.jpg" height="60px"></span>
 
                    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
                    <div id="main">
@@ -94,27 +102,14 @@
 
             </div>
 </div>
+
+<div w3-include-html="footer.html"></div>
+
         </div><!--container-fluid-->
 
 <!--script for side bar menu-->
-<script>
-    function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  $("#vic").removeClass("viclarge");
-  $("#vic").addClass("vicsmall");
+<script src="Assets/js/custom.js"></script>
 
-
-  document.getElementById("main").style.marginLeft = "250px";
-}
-
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
-  $("#vic").removeClass("vicsmall");
-  $("#vic").addClass("viclarge");
-}
-</script>
 
     </body>
 </html>

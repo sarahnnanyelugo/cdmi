@@ -16,7 +16,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
         <script src="Assets/js/jquery-3-5.min.js"></script>
-        <script src="Assets/js/popper.minjs"></script>
+        <script src="Assets/js/popper.min.js"></script>
         <script src="Assets/js/bootstrap.min.js"></script>
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
         <script src="https://smtpjs.com/v3/smtp.js"> </script>
@@ -25,23 +25,32 @@
 
     <body>
         <div class="container-fluid">
+
+            <div w3-include-html="Navbar.html"></div>
+
+
+            <div class="row col-md-12">
+                <img src="Assets/img/pix/learning.png" width="100%">
+
+            </div>
+
             <div class="row">
                 <div class="col-md-12 col-12" style="height:50% !important; width:100%; ">
                     <div id="mySidenav" class="sidenav  " >
                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                     <span style="color:white"><i class="icofont-home"></i> </span><a href="#">About </a>
-                     <span style="color:white" ><i class="icofont-ui-contact-list"></i></span><a href="#">Services</a>
-                     <span style="color:white"><i class="icofont-award"></i></span><a href="#">Our story/vision/mission</a>
-                     <span style="color:white"><i class="icofont-question"></i></span><a href="#">Contact</a>
-                     <span style="color:white"><i class="icofont-home"></i> </span><a href="#">About </a>
-                     <span style="color:white" ><i class="icofont-ui-contact-list"></i></span><a href="#">Services</a>
-                     <span style="color:white"><i class="icofont-award"></i></span><a href="#">Clients</a>
-                     <span style="color:white"><i class="icofont-question"></i></span><a href="#">Contact</a>
+                     <span style="color:white"><i class="icofont-home"></i> </span><a href="welcomeAdd.html">welcome Address </a>
+                     <span style="color:white" ><i class="icofont-ui-contact-list"></i></span><a href="achievements.html">Achievements</a>
+                     <span style="color:white"><i class="icofont-award"></i></span><a href="vision.html">Our story/vision/mission</a>
+                     <span style="color:white"><i class="icofont-question"></i></span><a href="gallery.html">Gallery</a>
+                     <span style="color:white"><i class="icofont-home"></i> </span><a href="#">Calender </a>
+                     <span style="color:white" ><i class="icofont-ui-contact-list"></i></span><a href="contacts.html">Contacts/Direction</a>
+                     <span style="color:white"><i class="icofont-award"></i></span><a href="schoolPolicy.html">School Policies</a>
+                     <span style="color:white"><i class="icofont-question"></i></span><a href="alumni.html">Alumni</a>
                    </div>
 
                    <!-- Use any element to open the sidenav -->
-                   <span onclick="openNav()" style="color:tomato; position: fixed; font-weight:bolder;font-size:16px; cursor:pointer"><i class="icofont-arrow-left" ></i>SIDEMENU</span>
-                
+                   <span onclick="openNav()" style="position:fixed; cursor:pointer; top:200px; "><img src="Assets/img/sidebar-icon.jpg" height="60px"></span>
+
                    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
                    <div id="main" >
                        <div class="col-md-8 col-12" >
@@ -124,29 +133,18 @@
                     </div>
 </div>
      <button style="float:right; margin-top:20px; background-color:rgb(8, 8, 66); color:white;" class="btn btn-lg bt-grey">Submit Form</button>
+
+
+
             </div>
 </div>
-        </div><!--container-fluid-->
-
-<!--script for side bar menu-->
-<script>
-    function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  $("#vic").removeClass("viclarge");
-  $("#vic").addClass("vicsmall");
 
 
-  document.getElementById("main").style.marginLeft = "250px";
-}
+</div>
+<div w3-include-html="footer.html"></div>
+</div>
+<!--container-fluid-->
 
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
-  $("#vic").removeClass("vicsmall");
-  $("#vic").addClass("viclarge");
-}
-</script>
-
+<script src="Assets/js/custom.js"></script>
     </body>
 </html>
