@@ -2944,9 +2944,10 @@ backface-visibility: hidden;
 color: black;
 }
 .flipcard-back{
-background-color: dodgerblue;				
+/* background-color: dodgerblue;				 */
 transform: rotateY(180deg);
-}		
+
+}
 input[type="checkbox"]:checked + .flipcard .flipcard-inner{
 transform: rotateY(180deg);
 }
