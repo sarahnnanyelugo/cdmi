@@ -23,16 +23,16 @@
 <!---the script above is for contacts-->
     </head>
 
-    <body>
+    <body >
         <div class="container-fluid">
 
             <div w3-include-html="Navbar.html"></div>
 
 
-            <div class="row col-md-12">
+            <!-- <div class="row col-md-12">
                 <img src="Assets/img/pix/learning.png" width="100%">
 
-            </div>
+            </div> -->
 
             <div class="row">
                 <div class="col-md-12 col-12" style="height:50% !important; width:100%; ">
@@ -49,94 +49,101 @@
                    </div>
 
                    <!-- Use any element to open the sidenav -->
-                   <span onclick="openNav()" style="position:fixed; cursor:pointer; top:200px; "><img src="Assets/img/sidebar-icon.jpg" height="60px"></span>
+                   <span onclick="openNav()" style="position:fixed; cursor:pointer; top:200px; z-index:4"><img src="Assets/img/sidebar-icon.jpg" height="60px"></span>
 
                    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-                   <div id="main" >
-                       <div class="col-md-8 col-12" >
-                       <h2  style="color:rgb(8, 8, 66);">Charlsedale Memorial International School</h2><br>
-                       <h5 style="color:rgb(8, 8, 66); font-weight:bolder">ALUMNI REGISTRATION</h5>
-                       <h6>Fields marked with an <span style="color:red; font-size:24px"> *</span> are required</h6>
-                       <p>This form is for all students that have passed through <span style="color:rgb(8, 8, 66); font-weight:bolder">CHARLSEDALE MEMORIAL INTERNATIONAL SCHOOL.</span> <br>The objective is to bring together alumni forging better understanding and togetherness; and also inspire the current students for a bright and rewarding future .</p>
+                   <div id="main">
+                    <div class="wrap row col-md-8">
+                        <div class="col-md-2">&nbsp;</div>
+                        <input type="checkbox" id="form_switch" style="display: none;">
+                    <div class="flipcard">
+                        <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <form class="login-form" action="">
+                                    <div class="form-header">
+                                        <h3>Be Part of Charlsedale School Alumni </h3>
+                                        <p>The Charlsedale School Alumni Association is a growing community dedicated to strengthening and working in partnership with the school to connect, support and coordinate the global network of all Ex-Charlsedalers while promoting the school’s mission and maintaining her values.
 
+                                            You are joining a network of over 30,000 Ex-Charlsedalers across the (num )of years of Charlsedale's history. We are here to support your continuous development and we want you to stay connected and active through our various programs and events, including:
+
+                                            </p>
+
+
+                                            <h3>Membership Qualifications</h3>
+                                            <p>jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz
+
+                                                </p>
+
+                                                <h3>Membership Guides</h3>
+                                                <p>jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz
+
+                                                    </p>
+                                                <h3>Membership Benefits </h3>
+                                                <ul>
+                                                    <li>Career Networking</li>
+                                            <li>Sporting Events </li>
+                                                    <li>Social Events</li>
+                                                    <li>Volunteer  </li>
+                                                </ul>
+
+                                                <h4>For Enquiries:</h4><br>
+                                                <h6>Alumni Development Officer</h6>
+                                                <small>alumni@charlsedaleschool.com</small>
+                                                <p>+234 70000000000</p>
+
+
+                                    </div>
+
+
+
+
+                                        <!--Email Input-->
+                                  <!--   <div class="form-group">
+                                    <input type="text" class="form-input" name="email" placeholder="email@example.com">
+                                    </div> -->
+                                    <!--Password Input-->
+                                   <!--  <div class="form-group">
+                                        <input type="password" class="form-input" name="password" placeholder="password">
+                                    </div> -->
+                                    <!--Login Button-->
+                                   <!--  <div class="form-group">
+                                      <button class="form-button" type="submit">Login</button>
+                                    </div> -->
+                                    <div class="form-footer">
+                                    I agree with the <a href="#">Terms and Condition</a> <label class="label-highlight" for="form_switch"> <input type="checkbox"> sign up  </label>
+                                    </div>
+                            </form>
                     </div>
-                    <!-- <div class="row col-md-12 col-12" style="border-bottom:solid 1px grey">&nbsp;</div> -->
-
-<div style="border:groove 18px rgb(250, 250, 250); ">
-                    <div class="row col-md-12 col-12" style="display:flex">
-                        <div class="col-md-1">&nbsp;</div>
-
-                        <form class="col-md-5 col-5">
-                        <label for="name">First Name<span style="color:red; font-size:24px"> *</span></label>
-                        <input type="text" class="form-control" id="name" aria-required=”true”>
-                    </form>
-                    <form class="col-md-5 col-5">
-                        <label for="last">Last Name<span style="color:red; font-size:24px"> *</span></label>
-                        <input type="text" class="form-control" id="last" aria-required=”true”>
-                    </form>
-                    <div class="col-md-1">&nbsp;</div>
-
-
-
+                    <div class="flipcard-back">
+                             <form class="login-form" action="">
+                                <div class="form-header">
+                                     <h3>Signup Form</h3>
+                                    <p>Register for a new account</p>
+                                </div>
+                        <!--Email Input-->
+                        <div class="form-group">
+                              <input type="text" class="form-input" name="email" placeholder="email@example.com">
+                                </div>
+                                <!--Password Input-->
+                                <div class="form-group">
+                                   <input type="password" class="form-input" name="password" placeholder="Password">
+                                </div>
+                                <!--Password Input-->
+                                <div class="form-group">
+                                    <input type="password" class="form-input" name="confirm_password" placeholder="Confirm Password">
+                                </div>
+                                <!--Login Button-->
+                                <div class="form-group">
+                                    <button class="form-button form-button-register" type="submit">Signup</button>
+                                </div>
+                                <div class="form-footer">
+                                    Already have an account? <label class="label-highlight" for="form_switch"> Login</label>
+                                </div>
+                        </form>
                     </div>
-
-                    <div class="row col-md-12 col-12" style="display:flex">
-                        <div class="col-md-1">&nbsp;</div>
-
-                        <form class="col-md-5 col-5">
-                        <label for="email">Email<span style="color:red; font-size:24px"> *</span></label>
-                        <input type="email" class="form-control" id="email" aria-required=”true”>
-                    </form>
-                    <form class="col-md-5 col-5">
-                        <label for="phone">Phone Num<span style="color:red; font-size:24px"> *</span></label>
-                        <input type="tel" class="form-control" id="phone" aria-required=”true”>
-                        <div class="col-md-1">&nbsp;</div>
-
-                    </form>
-
-
-
-                    </div>
-
-                    <div class="row col-md-12 col-12" style="display:flex">
-                        <div class="col-md-1">&nbsp;</div>
-
-                        <form class="col-md-10 col-10">
-                        <label for="address">Address/Location <span style="color:red; font-size:24px"> *</span></label>
-                        <input type="text" class="form-control" id="address" aria-required=”true”>
-                        <div class="col-md-1">&nbsp;</div>
-
-                    </form>
-
-                    </div>
-                    <div class="row col-md-12 col-12" style="display:flex">
-                        <div class="col-md-1">&nbsp;</div>
-
-                        <form class="col-md-10 col-10">
-                        <label for="address">Profession<span style="color:red; font-size:24px"> *</span></label>
-                        <input type="text" class="form-control" id="address" aria-required=”true” >
-                        <div class="col-md-1">&nbsp;</div>
-
-                    </form>
-
-                    </div>
-
-                    <div class="row col-md-12 col-12" style="display:flex">
-                        <div class="col-md-1">&nbsp;</div>
-                        <form class="col-md-10 col-10">
-                        <label for="address">Date of Graduation <span style="color:red; font-size:24px"> *</span></label>
-                        <input type="datetime-local" class="form-control" id="address" placeholder="when graduated" aria-required=”true”>
-                        <div class="col-md-1">&nbsp;</div>
-
-                    </form>
-
-                    </div>
-</div>
-     <button style="float:right; margin-top:20px; background-color:rgb(8, 8, 66); color:white;" class="btn btn-lg bt-grey">Submit Form</button>
-
-
-
-            </div>
+                </div>
+                </div>
+                </div>
 </div>
 
 
