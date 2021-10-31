@@ -1,183 +1,215 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            CharlesDale Landing Page Web
-        </title>
-        <link href="Assets/css/bootstrap.min.css" rel="stylesheet">
-        <link href="Assets/icofont/icofont.min.css" rel="stylesheet">
-        <link href="Assets/css/CDMI-WEB.css" rel="stylesheet" type="text/css">
-        <link href="Assets/fontawesome-free-5.15.3-web/css/fontawesome.min.css" rel="stylesheet">
-        <link href="Assets/css/radialMenu.min.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js">
-        <!-- <link href="Assets/css/charlsedale.css" rel="stylesheet" type="text/css"> -->
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
-        <script src="Assets/js/jquery-3-5.min.js"></script>
-        <script src="Assets/js/popper.min.js"></script>
-        <script src="Assets/js/bootstrap.min.js"></script>
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-        <script src="https://smtpjs.com/v3/smtp.js"> </script>
-<!---the script above is for contacts-->
-    </head>
+<head>
+    <title>
+        CharlesDale Landing Page Web
+    </title>
+    <link href="Assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Assets/icofont/icofont.min.css" rel="stylesheet">
+    <link href="Assets/css/CDMI-WEB.css" rel="stylesheet" type="text/css">
+    <link href="Assets/fontawesome-free-5.15.3-web/css/fontawesome.min.css" rel="stylesheet">
+    <link href="Assets/css/radialMenu.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js">
+    <!-- <link href="Assets/css/charlsedale.css" rel="stylesheet" type="text/css"> -->
 
-    <body >
-        <div class="container-fluid">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <script src="Assets/js/jquery-3-5.min.js"></script>
+    <script src="Assets/js/popper.min.js"></script>
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="https://smtpjs.com/v3/smtp.js"> </script>
+    <!---the script above is for contacts-->
+</head>
 
-            <div w3-include-html="Navbar.html"></div>
+<body>
+    <div class="container-fluid">
+
+        <div w3-include-html="Navbar.html"></div>
 
 
-            <!-- <div class="row col-md-12">
+        <!-- <div class="row col-md-12">
                 <img src="Assets/img/pix/learning.png" width="100%">
 
             </div> -->
 
-            <div class="row">
-                <div class="col-md-12 col-12" style="height:50% !important; width:100%; ">
-                    <div id="mySidenav" class="sidenav  " >
-                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                     <span style="color:white"><i class="icofont-home"></i> </span><a href="welcomeAdd.html">welcome Address </a>
-                     <span style="color:white" ><i class="icofont-ui-contact-list"></i></span><a href="achievements.html">Achievements</a>
-                     <span style="color:white"><i class="icofont-award"></i></span><a href="vision.html">Our story/vision/mission</a>
-                     <span style="color:white"><i class="icofont-question"></i></span><a href="gallery.html">Gallery</a>
-                     <span style="color:white"><i class="icofont-home"></i> </span><a href="#">Calender </a>
-                     <span style="color:white" ><i class="icofont-ui-contact-list"></i></span><a href="contacts.html">Contacts/Direction</a>
-                     <span style="color:white"><i class="icofont-award"></i></span><a href="schoolPolicy.html">School Policies</a>
-                     <span style="color:white"><i class="icofont-question"></i></span><a href="alumni.html">Alumni</a>
-                   </div>
+        <div class="row">
+            <div class="col-md-12 col-12" style="height:50% !important; width:100%; ">
+                <div id="mySidenav" class="sidenav  ">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <span style="color:white"><i class="icofont-home"></i> </span><a href="welcomeAdd.html">welcome
+                        Address </a>
+                    <span style="color:white"><i class="icofont-ui-contact-list"></i></span><a
+                        href="achievements.html">Achievements</a>
+                    <span style="color:white"><i class="icofont-award"></i></span><a href="vision.html">Our
+                        story/vision/mission</a>
+                    <span style="color:white"><i class="icofont-question"></i></span><a href="gallery.html">Gallery</a>
+                    <span style="color:white"><i class="icofont-home"></i> </span><a href="#">Calender </a>
+                    <span style="color:white"><i class="icofont-ui-contact-list"></i></span><a
+                        href="contacts.html">Contacts/Direction</a>
+                    <span style="color:white"><i class="icofont-award"></i></span><a href="schoolPolicy.html">School
+                        Policies</a>
+                    <span style="color:white"><i class="icofont-question"></i></span><a href="alumni.html">Alumni</a>
+                </div>
 
-                   <!-- Use any element to open the sidenav -->
-                   <span onclick="openNav()" style="position:fixed; cursor:pointer; top:200px; z-index:4"><img src="Assets/img/sidebar-icon.jpg" height="60px"></span>
+                <!-- Use any element to open the sidenav -->
+                <span onclick="openNav()" style="position:fixed; cursor:pointer; top:200px; z-index:4"><img
+                        src="Assets/img/sidebar-icon.jpg" height="60px"></span>
 
-                   <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-                   <div id="main">
+                <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+                <div id="main">
                     <div class="wrap row col-md-8">
                         <div class="col-md-2">&nbsp;</div>
                         <input type="checkbox" id="form_switch" style="display: none;">
-                    <div class="flipcard">
-                        <div class="flipcard-inner">
-                        <div class="flipcard-front">
-                            <form class="login-form" action="">
-                                    <div class="form-header">
-                                        <h3>Be Part of Charlsedale School Alumni </h3>
-                                        <p>The Charlsedale School Alumni Association is a growing community dedicated to strengthening and working in partnership with the school to connect, support and coordinate the global network of all Ex-Charlsedalers while promoting the school’s mission and maintaining her values.
+                        <div class="flipcard">
+                            <div class="flipcard-inner">
+                                <div class="flipcard-front">
+                                    <form class="login-form" action="">
+                                        <div class="form-header">
+                                            <h3>Be Part of Charlsedale School Alumni </h3>
+                                            <p>The Charlsedale School Alumni Association is a growing community
+                                                dedicated to strengthening and working in partnership with the school to
+                                                connect, support and coordinate the global network of all
+                                                Ex-Charlsedalers while promoting the school’s mission and maintaining
+                                                her values.
 
-                                            You are joining a network of over 30,000 Ex-Charlsedalers across the (num )of years of Charlsedale's history. We are here to support your continuous development and we want you to stay connected and active through our various programs and events, including:
+                                                You are joining a network of over 30,000 Ex-Charlsedalers across the
+                                                (num )of years of Charlsedale's history. We are here to support your
+                                                continuous development and we want you to stay connected and active
+                                                through our various programs and events, including:
 
                                             </p>
 
 
-                                            <h3>Membership Qualifications</h3>
-                                            <p>jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz
+                                            <h3 style="color:blue">Membership Terms and Conditions</h3>
+                                            <p>jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle
+                                                poligraficznym. Został po raz
+                                                jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle
+                                                poligraficznym. Został po raz
+                                                jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle
+                                                poligraficznym. Został po raz
 
-                                                </p>
+                                            </p>
 
-                                                <h3>Membership Guides</h3>
-                                                <p>jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz
+                                            <h3>Membership Guides</h3>
+                                            <p>jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle
+                                                poligraficznym. Został po raz
 
-                                                    </p>
-                                                <h3>Membership Benefits </h3>
-                                                <ul>
-                                                    <li>Career Networking</li>
-                                            <li>Sporting Events </li>
-                                                    <li>Social Events</li>
-                                                    <li>Volunteer  </li>
-                                                </ul>
+                                            </p>
+                                            <h3>Membership Benefits </h3>
+                                            <ul>
+                                                <li>Career Networking</li>
+                                                <li>Sporting Events </li>
+                                                <li>Social Events</li>
+                                                <li>Volunteer </li>
+                                            </ul>
 
-                                                <h4>For Enquiries:</h4><br>
-                                                <h6>Alumni Development Officer</h6>
-                                                <small>alumni@charlsedaleschool.com</small>
-                                                <p>+234 70000000000</p>
+                                            <h4>For Enquiries:</h4><br>
+                                            <h6 style="font-weight:bolder">Alumni Development Officer</h6>
+                                            <small>alumni@charlsedaleschool.com</small>
+                                            <p>+234 70000000000</p>
 
 
-                                    </div>
+                                        </div>
 
 
 
 
                                         <!--Email Input-->
-                                  <!--   <div class="form-group">
+                                        <!--   <div class="form-group">
                                     <input type="text" class="form-input" name="email" placeholder="email@example.com">
                                     </div> -->
-                                    <!--Password Input-->
-                                   <!--  <div class="form-group">
+                                        <!--Password Input-->
+                                        <!--  <div class="form-group">
                                         <input type="password" class="form-input" name="password" placeholder="password">
                                     </div> -->
-                                    <!--Login Button-->
-                                   <!--  <div class="form-group">
+                                        <!--Login Button-->
+                                        <!--  <div class="form-group">
                                       <button class="form-button" type="submit">Login</button>
                                     </div> -->
-                                    <div class="form-footer">
-                                   Interested in being a member? <label class="label-highlight" for="form_switch">sign up  </label>
-                                    </div>
-                            </form>
+                                        <div class="form-footer">
+                                            Interested in being a member? <label class="label-highlight"
+                                                for="form_switch">sign up </label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="flipcard-back">
+                                    <form class="login-form" action="">
+                                        <div class="form-header">
+                                            <h3>Signup Form</h3>
+                                            <p>Fields marked with an <span style="color:red; font-size:16px">*</span>
+                                                are required<br>
+                                                This form is for all Ex-Charlsedalers who are in agreement with our
+                                                <label class="label-highlight" for="form_switch"> Terms and
+                                                    Condition</label></p>
+                                        </div>
+                                        <!--Email Input-->
+                                        <div class="form-group">
+
+
+                                            <input type="text" class="form-input" name="name" placeholder="full name*">
+                                        </div>
+
+                                        <div class="form-group">
+
+
+                                            <input type="tel" class="form-input" name="phone" placeholder="phone num">
+                                        </div>
+
+                                        <div class="form-group">
+
+
+                                            <input type="text" class="form-input" name="email"
+                                                placeholder="email@example.com*">
+                                        </div>
+
+
+                                        <div class="form-group">
+
+
+                                            <input type="text" class="form-input" name="occupation"
+                                                placeholder="your occupation">
+                                        </div>
+
+
+                                        <!--Password Input-->
+                                        <div class="form-group">
+                                            <input type="password" class="form-input" name="password"
+                                                placeholder="Password">
+                                        </div>
+                                        <!--Password Input-->
+                                        <div class="form-group">
+                                            <input type="password" class="form-input" name="confirm_password"
+                                                placeholder="Confirm Password">
+                                        </div>
+                                        <!--Login Button-->
+
+                                        <div class="form-footer">
+                                            I agree with the <label class="label-highlight" for="form_switch"> Terms and
+                                                Condition</label> <label class="label-highlight" for="form_switch">
+                                                <input type="checkbox"></label>
+                                        </div>
+                                        <div class="form-group">
+                                            <button class="form-button form-button-register"
+                                                type="submit">Signup</button>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flipcard-back">
-                             <form class="login-form" action="">
-                                <div class="form-header">
-                                     <h3>Signup Form</h3>
-                                    <p>Fields marked with an <span style="color:red; font-size:16px">*</span> are required<br>
-                                        This form is for all Ex-Charlsedalers who are in agreement with our <label class="label-highlight" for="form_switch"> Terms and Condition</label></p>
-                                </div>
-                        <!--Email Input-->
-                        <div class="form-group">
-
-
-                              <input type="text" class="form-input" name="name" placeholder="full name*">
-                                </div>
-
-                                <div class="form-group">
-
-
-                                    <input type="tel" class="form-input" name="phone" placeholder="phone num">
-                                      </div>
-
- <div class="form-group">
-
-
-                              <input type="text" class="form-input" name="email" placeholder="email@example.com*">
-                                </div>
-
-
-                                <div class="form-group">
-
-
-                                    <input type="text" class="form-input" name="occupation" placeholder="your occupation">
-                                      </div>
-
-
-                                <!--Password Input-->
-                                <div class="form-group">
-                                   <input type="password" class="form-input" name="password" placeholder="Password">
-                                </div>
-                                <!--Password Input-->
-                                <div class="form-group">
-                                    <input type="password" class="form-input" name="confirm_password" placeholder="Confirm Password">
-                                </div>
-                                <!--Login Button-->
-
-                                <div class="form-footer">
-                                    I agree with the <label class="label-highlight" for="form_switch"> Terms and Condition</label> <label class="label-highlight" for="form_switch"> <input type="checkbox"></label>
-                                    </div>
-                                <div class="form-group">
-                                    <button class="form-button form-button-register" type="submit">Signup</button>
-                                </div>
-
-                        </form>
-                    </div>
                 </div>
-                </div>
-                </div>
-</div>
 
 
-</div>
-<div w3-include-html="footer.html"></div>
-</div>
-<!--container-fluid-->
+            </div>
+            <div w3-include-html="footer.html"></div>
+        </div>
+        <!--container-fluid-->
 
-<script src="Assets/js/custom.js"></script>
-    </body>
+        <script src="Assets/js/custom.js"></script>
+</body>
+
 </html>

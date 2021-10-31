@@ -2459,12 +2459,16 @@ lightbox .lightbox-header {
 }
 .lightbox .lightbox-arrow.arrow-left {
   left: 0;
-  background-image:url("../img/neon.jpg" );
+  background-image:url("../img/led2.png" );
+background-size:contain;
+transform: rotate(-180deg);
+
 
 }
 .lightbox .lightbox-arrow.arrow-right {
   right: 0;
-  background-color: #fff;
+  background-image:url("../img/led2.png" );
+background-size:contain;
 }
 
 .lightbox .lightbox-slide {
@@ -2966,7 +2970,9 @@ background:red;
 color: blue;
 }
 
-
+#boarders img:hover{
+  animation:zoom-in-zoom-out 10s ease-out;
+}
 
 
 
