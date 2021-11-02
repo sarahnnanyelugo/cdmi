@@ -2347,6 +2347,12 @@ color:white !important;
 float:right !important
 }
 
+.btn-pics:hover{
+  background-color:dodgerblue!important;
+  color:rgb(53, 53, 75) !important;
+  border:white 4px groove;
+}
+
 .gallery-item:hover .thumb {
   transform: scale(1.05);
 }
@@ -2975,211 +2981,126 @@ color: blue;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.que{
+
+  margin:20px;
+  margin-left:60px;
+  color:rgb(15, 15, 71);
+  font-weight:bolder;
+  font-size:18px!important;
+
+}
+
+.que:hover{
+  box-shadow:10px 5px 5px 10px rgb(225, 225, 252) !important;
+
+
+}
+#more {
+  display: none;
+  font-size:16px;
+  color:rgb(8, 8, 131);
+  padding:20px;
+  animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+
+}
+ #more2 {
+  display: none;
+  font-size:16px;
+  color:rgb(8, 8, 131);
+  padding:20px;
+  animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+
+}
+
+
+
+#more3 {
+  display: none;
+  font-size:16px;
+  color:rgb(8, 8, 131);
+  padding:20px;
+  animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+
+}
+
+#more4 {
+  display: none;
+  font-size:16px;
+  color:rgb(8, 8, 131);
+  padding:20px;
+  animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+
+}
+
+#more5 {
+  display: none;
+  font-size:16px;
+  color:rgb(8, 8, 131);
+  padding:20px;
+  animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+
+}
+
+
+#more6 {
+  display: none;
+  font-size:16px;
+  color:rgb(8, 8, 131);
+  padding:20px;
+  animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+
+}
+
+
+#more7 {
+  display: none;
+  font-size:16px;
+  color:rgb(8, 8, 131);
+  padding:20px;
+  animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+
+}
+#more8 {
+  display: none;
+  font-size:16px;
+  color:rgb(8, 8, 131);
+  padding:20px;
+  animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+
+}
 
 
 
