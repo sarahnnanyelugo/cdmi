@@ -3143,7 +3143,9 @@ color: blue;
   background-image:url("../img/scholarship.jpg");
   min-height:500px;
   background-size:cover;
-  color:rgb(5, 5, 59);
+  /* color:rgb(5, 5, 59); */
+  color:black;
+
   padding:30px;
   font-weight:bolder;
   margin-right:-15px !important;
