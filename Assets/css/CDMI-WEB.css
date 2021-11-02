@@ -3102,9 +3102,43 @@ color: blue;
 
 }
 
+.bk{
+  height:250px;
+  max-width:200px !important;
+  /* border:solid 1px black; */
+  margin:30px;
+  text-align:center;
+  padding-top:100px;
+  border-radius:5px !important;
+  background-color:rgb(21, 21, 82);
 
 
+}
 
+.bk:hover{
+  box-shadow:0px 15px 15px 5px black !important;
+  transition:0.4s;
+
+}
+.bk p{
+  font-size:12px !important;
+  background-color:rgb(150, 31, 10);
+  color:white;
+  margin-top:70px;
+  padding:18px;
+  min-width:200px;
+  border-bottom-right-radius:5px;
+  border-bottom-left-radius:5px;
+  font-weight:bolder;
+}
+
+
+.modal-content{
+  background-color:rgb(21, 21, 82) !important;
+  color:white;
+  font-weight:bolder;
+  padding:20px;
+}
 
 
 
