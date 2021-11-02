@@ -3151,21 +3151,36 @@ color: blue;
   margin-right:-15px !important;
 }
 .fac{
-  background-color:grey;
   margin-top:30px;
+  padding:30px 0 30px 0;
 }
 .fac2{
   margin-top:30px;
-  background-color:blue;
+  background-color:rgb(252, 246, 246);
+  padding:30px 0 30px 0;
 
 }
+.fac2 img:hover{
+  animation: fadein 5s;
+}
 
+.fac img:hover{
+  animation: fadein 5s;
+}
 
+.fac h4,.fac2 h4{
+  color:rgb(33, 33, 65);
+  font-weight:bolder;
+}
+.btn-info{
+  background-color:rgb(33, 33, 65)!important;
+}
 
-
-
-
-
+.btn-info:hover{
+  background-color:transparent !important;
+  color:rgb(33, 33, 65)!important;
+  border:4px groove;
+}
 
 
 
