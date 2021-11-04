@@ -1,64 +1,93 @@
-<html lang="en" >
-	<head>
-        <title>
-            CharlesDale Landing Page Web
-        </title>
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Carousel 08</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-      </head>
-<body>
-  <div w3-include-html="Navbar.html"></div>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&display=swap" rel="stylesheet">
+		
+		<link rel="stylesheet" href="Assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="Assets/css/owl.theme.default.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+		<link rel="stylesheet" href="Assets/css/animate.css">
+		<link rel="stylesheet" href="Assets/css/style.css">
+  </head>
+  <body>
+		
+		<section class="ftco-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h2 class="heading-section mb-5" style="font-weight:bold">TESTIMONIALS</h2>
+					</div>
+					<div class="col-md-12">
+						<div class="featured-carousel owl-carousel">
+							<div class="item">
+								<div class="row justify-content-center">
+									<div class="col-md-11">
+										<div class="testimony-wrap d-md-flex">
+											<div class="img" style="background-image: url(Assets/img/test4.jpeg);"></div>
+											<div class="text text-center p-4 py-xl-5 px-xl-5 d-flex align-items-center">
+												<div class="desc w-100">
+													<p class="h3 mb-5">"Incredible services and amazing customer support</p>
+													<div class="pt-4">
+														<p class="name mb-0">&mdash; Joy Smith</p>
+														<span class="position">Project Manager</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="row justify-content-center">
+									<div class="col-md-11">
+										<div class="testimony-wrap d-md-flex">
+											<div class="img" style="background-image: url(Assets/img/text2.jpg);"></div>
+											<div class="text text-center p-4 py-xl-5 px-xl-5 d-flex align-items-center">
+												<div class="desc w-100">
+													<p class="h3 mb-5">"Incredible services and amazing customer support</p>
+													<div class="pt-4">
+														<p class="name mb-0">&mdash; Mr Obong Aniedi</p>
+														<span class="position">Project Manager</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="row justify-content-center">
+									<div class="col-md-11">
+										<div class="testimony-wrap d-md-flex">
+											<div class="img" style="background-image: url(Assets/img/text3.jpeg);"></div>
+											<div class="text text-center p-4 py-xl-5 px-xl-5 d-flex align-items-center">
+												<div class="desc w-100">
+													<p class="h3 mb-5">"Incredible services and amazing customer support</p>
+													<div class="pt-4">
+														<p class="name mb-0">&mdash; John Doe</p>
+														<span class="position">Project Manager</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-
-
-
-
-
-
-
-
-
-
-
-  <script>
-    function includeHTML() {
-      var z, i, elmnt, file, xhttp;
-      /* Loop through a collection of all HTML elements: */
-      z = document.getElementsByTagName("*");
-      for (i = 0; i < z.length; i++) {
-        elmnt = z[i];
-        /*search for elements with a certain atrribute:*/
-        file = elmnt.getAttribute("w3-include-html");
-        if (file) {
-          /* Make an HTTP request using the attribute value as the file name: */
-          xhttp = new XMLHttpRequest();
-          xhttp.onreadystatechange = function() {
-            if (this.readyState == 4) {
-              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-              /* Remove the attribute, and call this function once more: */
-              elmnt.removeAttribute("w3-include-html");
-              includeHTML();
-            }
-          }
-          xhttp.open("GET", file, true);
-          xhttp.send();
-          /* Exit the function: */
-          return;
-        }
-      }
-    }
-    </script>
-
-
-<script>
-  includeHTML();
-  </script>
-</body>
-
-
-
-
+    <script src="Assets/js/jquery.min.js"></script>
+    <script src="Assets/js/popper.js"></script>
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <script src="Assets/js/owl.carousel.min.js"></script>
+    <script src="Assets/js/main.js"></script>
+  </body>
 </html>
-
-
-
