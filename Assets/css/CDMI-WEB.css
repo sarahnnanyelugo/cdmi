@@ -2577,12 +2577,12 @@ background-size:contain;
   margin-left: 5px;
 }
 
-.active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+/* .active:after {
+  content: "\2796";
   color: rgb(8, 8, 80) !important;
 
 
-}
+} */
 
 /*vision, mission and phylosophy*/
 .container {
