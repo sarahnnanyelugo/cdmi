@@ -2538,7 +2538,7 @@ background-size:contain;
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
   /* background-color: rgba(53, 53, 75); */
-  color:white;
+  color:tomato;
   font-weight:bolder;
 
 }
