@@ -2982,7 +2982,7 @@ color: blue;
 
 }
 .fac2 img:hover{
-  animation: fadein 5s;
+  animation: fadein 0.1s;
 }
 
 .fac img:hover{
