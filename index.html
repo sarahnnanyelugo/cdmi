@@ -35,7 +35,7 @@
     </head>
 <body>
 <div class="container-fluid">
-
+<input type="hidden" id="tag" value="home">
     <div class="row" w3-include-html="Navbar.html"></div>
 
     <!--the first slide-->
@@ -440,7 +440,7 @@
 
 
 <!--div for testimonials-->
-<section class="ftco-section">
+<section class="ftco-section" style="background-color:rgb(231, 225, 225);">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -454,11 +454,11 @@
                                 <div class="testimony-wrap d-md-flex">
                                     <div class="img" style="background-image: url(Assets/img/test4.jpeg);"></div>
                                     <div class="text text-center p-4 py-xl-5 px-xl-5 d-flex align-items-center">
-                                        <div class="desc w-100">
-                                            <p class="h3 mb-5">"Incredible services and amazing customer support</p>
+                                        <div class="desc w-100" style="padding-top:140px !important">
+                                            <p class="h3 mb-5">"Academic prowess and general uprighness is our watch word at CDMIS"</p>
                                             <div class="pt-4">
-                                                <p class="name mb-0">&mdash; Joy Smith</p>
-                                                <span class="position">Project Manager</span>
+                                                <p class="name mb-0">&mdash; Juliet Francis</p>
+                                                <span class="position" style="display:block !important">Project Manager</span>
                                             </div>
                                         </div>
                                     </div>
@@ -473,10 +473,10 @@
                                     <div class="img" style="background-image: url(Assets/img/text2.jpg);"></div>
                                     <div class="text text-center p-4 py-xl-5 px-xl-5 d-flex align-items-center">
                                         <div class="desc w-100">
-                                            <p class="h3 mb-5">"Incredible services and amazing customer support</p>
+                                            <p class="h3 mb-5" style="padding-top:140px !important">"My experience at CDMIS is beyond par. I am part of building the next generation</p>
                                             <div class="pt-4">
-                                                <p class="name mb-0">&mdash; Mr Obong Aniedi</p>
-                                                <span class="position">Project Manager</span>
+                                                <p class="name mb-0">&mdash; Sorochukwu Solomon</p>
+                                                <span class="position">Alumi</span>
                                             </div>
                                         </div>
                                     </div>
@@ -491,10 +491,10 @@
                                     <div class="img" style="background-image: url(Assets/img/text3.jpeg);"></div>
                                     <div class="text text-center p-4 py-xl-5 px-xl-5 d-flex align-items-center">
                                         <div class="desc w-100">
-                                            <p class="h3 mb-5">"Incredible services and amazing customer support</p>
+                                            <p class="h3 mb-5" style="padding-top:140px !important">"I appreciate the effort the school is putting in to build the children in all areas</p>
                                             <div class="pt-4">
-                                                <p class="name mb-0">&mdash; John Doe</p>
-                                                <span class="position">Project Manager</span>
+                                                <p class="name mb-0">&mdash; Mirabel Onwuka</p>
+                                                <span class="position" >Project Manager</span>
                                             </div>
                                         </div>
                                     </div>
@@ -507,21 +507,7 @@
         </div>
     </div>
 </section>
-<!-- <div class="row">
-    <div class="col-md-12" id="monials">
-<div class="testi">
-    <div class="col-md-2" style="padding-top:90px">
-<img src="Assets/img/pix/Ellipse10.png" ></div>
-<div class="col-md-2">&nbsp;</div>
-<p class="col-md-4 " style="text-shadow:1px 1px black; background-color:black !important; opacity:0.5; font-weight:bolder !important">  <span style="font-size:40px; color:tomato"><i class="icofont-quote-left"></i></span>"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain"
-    "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain
-    "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...<span style="font-size:40px; color:tomato"><i class="icofont-quote-right"></i></span> "<br><br>
-</p>
-    </div>
-    <div class="col-md-2" style="float:right; background-color:rgb(1, 1, 29);color:white; margin-top:-90px; margin-right:30px; font-size:24px !important">Obong Aniedi</div>
 
-</div>
-</div> -->
 <!--end of testimonials-->
 
 
@@ -726,5 +712,38 @@
 <script src="Assets/js/custom.js"></script>
 <script src="Assets/js/owl.carousel.min.js"></script>
 <script src="Assets/js/main.js"></script>
+
+<script>
+    jQuery(document).ready(function () {
+          var home =$("#home");
+        var about =$("#about");
+        var admission =$("#admission");
+        var academics =$("#academics");
+        var tagg =$("#tag");
+
+
+      window.setTimeout(function(){
+        home.removeClass("activenav")
+        about.removeClass("activenav")
+       admission.removeClass("activenav")
+      academics.removeClass("activenav")
+
+        if(tagg.val() =="home")
+        {
+          about.addClass("activenav")
+
+        }
+        if(tagg.val() =="about")
+        {
+         home.addClass("activenav")
+        }
+
+           console.log(tagg.val()=="about")
+           about.addClass("activenav")
+
+      },2000)
+
+      });
+</script>
 </body>
 </html>

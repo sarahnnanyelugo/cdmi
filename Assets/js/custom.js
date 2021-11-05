@@ -53,11 +53,12 @@ window.addEventListener("DOMContentLoaded", (event) => {
       jQuery(".ddc").removeClass("dropdown2-content");
       jQuery(".ddc").addClass("dropdown2-content-dark");
       jQuery(".column2 a").css("color", "white");
+
     }
   });
 });
 
-jQuery(document).ready(function () {
+/* jQuery(document).ready(function () {
   jQuery(".icofont-search-1").click(function () {
     jQuery(this).addClass("Search-container");
   });
@@ -67,7 +68,7 @@ $(document).ready(function () {
   $(".icofont-search-1").click(function () {
     $(this).addClass("Search-container");
   });
-});
+}); */
 
 $(function () {
   $(".c_h").click(function (e) {
@@ -765,6 +766,61 @@ if(getUrlParameter('register') == 'true')
 
           }
         }
-        //for welcome address
+        //active link
+
+        jQuery(document).ready(function () {
+      window.setTimeout(function(){
+        $("#home").removeClass("activenav")
+        $("#about").removeClass("activenav")
+        $("#admission").removeClass("activenav")
+        $("#academics").removeClass("activenav")
+
+        if($("#tag").val() =="home")
+        {
+          $("#home").addClass("activenav")
+
+        }
+        if($("#tag").val() =="about")
+        {
+          $("#about").addClass("activenav")
+        }
+        if( $("#tag").val()=="admission")
+        {
+          $("#admission").addClass("activenav")
+        }
+
+        if($("#tag").val() =="academics")
+        {
+          $("#academics").addClass("activenav")
+        }
+
+ var pick=false;
+      $("#searchButton").click(function(e){
+        pick=!pick;
+        console.log(pick)
+        if(pick==true){
+          $("#searchbar").addClass("Search-container");
+          $("#searchbar").removeClass("hid")
+            }
+            else{
+            $("#searchbar").removeClass("Search-container")
+            $("#searchbar").addClass("hid");
+            }
+      })
+      $("#closeSearch").click(function(e){
+        pick=false;
+        $("#searchbar").removeClass("Search-container")
+            $("#searchbar").addClass("hid");
+      })
+
+
+      },200)
+
+
+
+      });
+
+
+
 
 
