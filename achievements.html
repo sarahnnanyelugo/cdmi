@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>accordion</title>
+  	<title>CharlesDale Landing Page Web</title>
 	  <link href="Assets/css/bootstrap.min.css" rel="stylesheet">
 	  <link href="Assets/icofont/icofont.min.css" rel="stylesheet">
 	  <link href="Assets/css/CDMI-WEB.css" rel="stylesheet" type="text/css">
@@ -82,7 +82,7 @@
 			.content span{
 				float:right;
 			}
-			
+
 			input + label + .content {
 				opacity: 0;
 				height: 0;
@@ -90,21 +90,22 @@
 				padding: 0 25px;
 				transition: ease .5s;
 			}
-			
+
 			input:checked + label + .content {
 				opacity: 1;
-				min-height: 350px;
+				 height:fit-content !important;
 				font-size: 14px;
 				padding: 10px 25px;
 
 			}
-			
+
+
 			</style>
 
   </head>
 
   <body>
-		
+
 <div class="container-fluid">
 
 	<input type="hidden" id="tag" value="about">
@@ -145,9 +146,9 @@
 <div class="row">
 	<div class="col-md-10 col-12" style="margin-left:120px">
 	<input type="checkbox" id="title1" />
-	<label for="title1">1. INTERNATIONAL MATHEMATICS AND SCIENCE OLYMPIAD</label>
-	
-	<div class="content">
+	<label for="title1" >1. INTERNATIONAL MATHEMATICS AND SCIENCE OLYMPIAD</label>
+
+	<div class="content ">
 	<p> <p>National Chemistry Olympiad Competition- Best Female Student          <span>2017</span></p>
 	<p>Nigeria's Representative in the 50th International Mendelieve Chemistry Olympiad, Moscow, Russian <span>2016</span></p>
 	<p>National Chemistry Olympiad Competition- 1st, 2nd, 3rd and 5th position, State Level <span>2016</span></p>
@@ -160,9 +161,9 @@
 	</div>
 	
 	<input type="checkbox" id="title2" />
-	<label for="title2">2. AMERICAN MATHEMATICS COMPETITION (AMC)</label>
+	<label for="title2" >2. AMERICAN MATHEMATICS COMPETITION (AMC)</label>
 
-	<div class="content">
+	<div class="content " style="max-height:150px !important">
 		<p>American Mathematics Competition: 1gold, 1 silver<span>2015</span></p>
 		<p>American Mathematics Competition: 1 gold, 2 silver, 4 bronze<span>2013</span></p>
 	</div>
