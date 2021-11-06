@@ -1697,11 +1697,13 @@ top:-60px !important;
 background-color:rgb(7, 7, 73);
 color:white;
 font-size:40px;
-text-align:center;
+align-items:center;
 border:groove 12px white;
+margin-left:60px !important;
 }
 .detail{
   color:rgb(1, 1, 29);
+  text-align:center;
 }
 .symbol{
   /* border-right:solid 2px rgb(211, 207, 207); */
@@ -1935,7 +1937,7 @@ border:groove 12px white;
 
 
 .slanted {
-  margin: 45px;
+  margin:54px !important;
   position: relative;
   /* display: inline-block; */
   background-color: blue;
