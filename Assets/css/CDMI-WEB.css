@@ -2857,7 +2857,7 @@ color: blue;
 }
 .fac2{
   margin-top:30px;
-  background-color:rgb(252, 246, 246);
+  background-color:rgb(252, 246, 246) !important;
   padding:30px 0 30px 0;
 
 }
